@@ -13,26 +13,33 @@
           <a class="navigation-link-logo"><img class="logo" alt="Логотип GllacyShop"></img></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link">Каталог</a>
+          <a class="navigation-link" href="catalog.html">Каталог</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link">Доставка и оплата</a>
+          <a class="navigation-link" href="#">Доставка и оплата</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link">О компании</a>
+          <a class="navigation-link" href="#">О компании</a>
         </li>
       </ul>
     </nav>
     <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
     <button class="search visually-hidden">Поиск</button>
-    <a class="entry"><img alt="Вход">Вход</a>
-    <a class="basket"><img alt="Корзина">2 товара</a>
+    <a class="entry" href="#">Вход</a>
+    <a class="basket" href="#">2 товара</a>
   </header>
   <main class="page-main">
-    <section class="title-catalog">
-      <span>Главная</span><span>Каталог</span>
+    <header class="title-catalog">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог</a>
+        </li>
+      </ul>
       <h2>Сливочное мороженое</h2>
-    </section>
+    </header>
     <section class="choice-catalog">
       <label for="select">Сортировка:
         <select id="select">
@@ -40,23 +47,23 @@
         </select>
       </label>
       <label>
-
+        <p>Цена: 100 ₽ – 500 ₽</p>
       </label>
-      <label>
+      <section class="fat">
         Жирность:
-        <input type="radio">0 %</input>
-        <input type="radio">до 10 %</input>
-        <input type="radio">до 30 %</input>
-        <input type="radio">выше 30 %</input>
-      </label>
-      <label>Наполнители:
-        <input type="checkbox">шоколадные</input>
-        <input type="checkbox">сахарные посыпки</input>
-        <input type="checkbox">фрукты</input>
-        <input type="checkbox">сиропы</input>
-        <input type="checkbox">джемы</input>
-      </label>
-      <button type="button">Применить</button>>
+        <label><input type="radio" name="fat-radio">0 %</input></label>
+        <label><input type="radio" name="fat-radio">до 10 %</input></label>
+        <label><input type="radio" name="fat-radio">до 30 %</input></label>
+        <label><input type="radio" name="fat-radio">выше 30 %</input></label>
+      </section>
+      <section class="content-fillers">Наполнители:
+        <label><input type="checkbox">шоколадные</input></label>
+        <label><input type="checkbox">сахарные посыпки</input></label> 
+        <label><input type="checkbox">фрукты</input></label>
+        <label><input type="checkbox">сиропы</input></label>
+        <label><input type="checkbox">джемы</input></label>
+        <label><button type="button">Применить</button></label>
+      </section>
     </section>
     <section class="all-types-ice-cream">
       <ul class="all-types-ice-cream-list">
@@ -136,6 +143,34 @@
           <button type="button"></li>
       </ul>
     </section>
+    <section class="view"><button type="button">Показать еще</button></section>
+    <ul class="pagination">
+      <li class="pagination-item">
+        <a class="pagination-link pagination-prev pagination-disabled">
+          <span class="visually-hidden">Предыдущая страница</span>
+        </a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link pagination-current">1</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">2</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">3</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">4</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">5</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link pagination-next" href="#">
+          <span class="visually-hidden">Следующая страница</span>
+        </a>
+      </li>
+    </ul>
   </main>
   <footer class="page-footer">
     <section class="anchors-footer">
