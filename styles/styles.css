@@ -46,3 +46,29 @@ body{
   text-decoration: none;
   color: inherit;
 }
+
+/* MAIN PAGE */
+
+/* СЛАЙДЫ */
+
+/* ПОДАРКИ */
+.present-first{
+  background-image: url("../images/малина фото.png");
+  background-repeat: no-repeat;
+}
+
+.present-second{
+  background-image: url("../images/маршмеллоу фото.png");
+  background-repeat: no-repeat;
+}
+/* ВЫБОР МОРОЖЕНОГО */
+/* ПРЕИМУЩЕСТВА */
+/**/
+.ways-10{
+  background-image: url("../images/сервировка.png");
+  background-repeat: no-repeat;
+}
+
+.delivery{
+  
+}
