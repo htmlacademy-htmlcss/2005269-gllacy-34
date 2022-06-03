@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+
+  <!-- * HEADER -->
   <header class="page-header">
     <nav class="page-navigation">
       <ul class="navigation-list">
@@ -29,6 +31,8 @@
     <a class="entry" href="#">Вход</a>
     <a class="basket" href="#">2 товара</a>
   </header>
+
+  <!-- * MAIN -->
   <main class="page-main">
     <header class="title-catalog">
       <ul class="breadcrumbs">
@@ -41,16 +45,21 @@
       </ul>
       <h1>Сливочное мороженое</h1>
     </header>
+
+    <!-- * ВЫБОР ЧТО ИМЕННО ОТОБРАЖАТЬ -->
     <section class="choice-catalog">
-      <form class="choice-catalog-form">
+      <form class="choice-catalog-form" action="https://echo.htmlacademy.ru">
+
       <div for="select">Сортировка:
         <select id="select">
           <option>По популярности</option>
         </select>
       </div>
+
       <div>
         <p>Цена: 100 ₽ – 500 ₽</p>
       </div>
+
       <div class="fat">
         Жирность:
         <label><input type="radio" name="fat-radio" value="0 %">0 %</label>
@@ -58,6 +67,7 @@
         <label><input type="radio" name="fat-radio" value="до 30%">до 30 %</label>
         <label><input type="radio" name="fat-radio" value="выше 30%">выше 30 %</label>
       </section>
+
       <section class="content-fillers">Наполнители:
         <label><input type="checkbox" name="chocolate" value="chocolate">шоколадные</label>
         <label><input type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">сахарные посыпки</label> 
@@ -69,6 +79,7 @@
       </section>
     </form>
       
+    <!-- * ВЫБОР МОРОЖЕНОГО -->
     <section class="types-ice-cream">
       <ul class="types-ice-cream-list">
         <li class="types-ice-cream-item">
@@ -88,8 +99,7 @@
         <li class="types-ice-cream-item"></li>
           <img alt="Мороженое со вкусом черники" weight="168" height="168" src="images/черника.jpg"></img>
           <a>Черника</a>
-          <p>Крем-брюле
-            с черничным джемом</p>
+          <p>Крем-брюле с черничным джемом</p>
             <span class="price">330 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button>
         <li class="types-ice-cream-item">
@@ -108,8 +118,7 @@
         <li class="types-ice-cream-item">          
           <img src="images/банан.jpg" weight="168" height="168" alt="Мороженое Банан">
           <a>Банан</a>
-          <p>Сливочный пломбир
-            с банановым вкусом</p>
+          <p>Сливочный пломбир с банановым вкусом</p>
           <span class="price">340 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
@@ -121,8 +130,7 @@
         <li class="types-ice-cream-item">          
           <img src="images/клубнка.jpg" weight="168" height="168" alt="Мороженое Клубничка">
           <a>Клубничка</a>
-          <p>Сливочный пломбир
-            с клубничным вкусом</p>
+          <p>Сливочный пломбир с клубничным вкусом</p>
           <span class="price">330 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
@@ -134,8 +142,7 @@
         <li class="types-ice-cream-item">          
           <img src="images/ментол.jpg" weight="168" height="168" alt="Мороженое Ментол">
           <a>Ментол</a>
-          <p>Сливочный пломбир
-            с ментоловым сиропом</p>
+          <p>Сливочный пломбир с ментоловым сиропом</p>
           <span class="price">320 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
@@ -153,6 +160,7 @@
         <li><a class="view" href="#">Показать еще</a></li>
       </ul>
     </section>
+
     <ul class="pagination">
       <li class="pagination-item">
         <a class="pagination-link pagination-prev pagination-disabled">
@@ -180,7 +188,10 @@
         </a>
       </li>
     </ul>
+
   </main>
+
+  <!-- * FOOTER -->
   <footer class="page-footer">
     <section class="anchors-footer">
       <ul class="social-network">
@@ -201,6 +212,7 @@
         <span>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
       </div>
     </section>
+
 </footer>
 </body>
 </html>

@@ -26,6 +26,7 @@ body{
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   background-color: #FEAFC3;
   color: #2D3440;
 }
@@ -73,7 +74,6 @@ h2{
 
 .order{
   font-weight: 700;
-  font-size: 16px;
   line-height: 20px;}
 
 /* ПОДАРКИ */
@@ -89,7 +89,6 @@ h2{
 
 .take-present{
   font-weight: 700;
-  font-size: 16px;
   line-height: 20px;
 }
 
@@ -100,8 +99,6 @@ h3{
 }
 .info-present{
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
   }
 /* ВЫБОР МОРОЖЕНОГО */
 
@@ -132,3 +129,17 @@ h3{
   background-image: url("../images/мороженое-обратная-связь.jpg");
   background-repeat: no-repeat;
 }
+
+/* FOOTER */
+
+.footer-navigation-first{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-navigation-item{font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;}
