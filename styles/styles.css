@@ -1,28 +1,29 @@
 @font-face {
-  font-family: "Inter", sans-serif;
-  src: url(../fonts/inter-400.woff2) format("woff2"),;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
+  src: url(../fonts/inter-400.woff2) format("woff2");
+
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter", sans-serif;
-  src: url(../fonts/inter-700.woff2) format("woff2"),;
+  font-family: "Inter";
+  src: url(../fonts/inter-700.woff2) format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter", sans-serif;
-  src: url(../fonts/inter-900.woff2) format("woff2"),;
+  font-family: "Inter";
+  src: url(../fonts/inter-900.woff2) format("woff2");
   font-style: normal;
   font-weight: 900;
   font-display: swap;
 }
 
-body{
+body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -31,27 +32,30 @@ body{
   color: #2D3440;
 }
 
+/* ! РЕШИТЬ */
 
-h2{
+/* h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+} */
+
+/* h2 {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-}
+} */
 
 /* HEADER */
 
-.page-header{
-
-}
-
-.number{
+.number {
   font-weight: 700;
   text-decoration: none;
   color: #2D3440;
 }
 
-.navigation-link{
+.navigation-link {
   text-decoration: none;
   color: inherit;
 }
@@ -60,86 +64,83 @@ h2{
 
 /* СЛАЙДЫ */
 
-.title-ice-cream{
+.title-ice-cream {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
-.description-ice-cream{
+.description-ice-cream {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
 
-.order{
+.order {
   font-weight: 700;
   line-height: 20px;}
 
 /* ПОДАРКИ */
-.present-first{
+.present-first {
   background-image: url("../images/малина фото.png");
   background-repeat: no-repeat;
 }
 
-.present-second{
+.present-second {
   background-image: url("../images/маршмеллоу фото.png");
   background-repeat: no-repeat;
 }
 
-.take-present{
+.take-present {
   font-weight: 700;
   line-height: 20px;
 }
 
-h3{
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
-.info-present{
+.info-present {
   font-weight: 400;
   }
 /* ВЫБОР МОРОЖЕНОГО */
 
 /* ПРЕИМУЩЕСТВА */
 
-.advantages{
+.advantages {
   background-image: url("../images/вафля.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
 /* СЕРВИРОВКА */
-.ways-10{
+.ways-10 {
   background-image: url("../images/сервировка.png");
   background-repeat: no-repeat;
   width: 570px;
 }
 
 /* РАССЫЛКА */
-.delivery{
+.delivery {
   background-image: url("../images/почтовый фон.png");
   background-repeat: no-repeat;
   
 }
 
 /* ФОРМА ОБРАТНОЙ РАССЫЛКИ */
-.map-address{
+.map-address {
   background-image: url("../images/мороженое-обратная-связь.jpg");
   background-repeat: no-repeat;
 }
 
 /* FOOTER */
 
-.footer-navigation-first{
+.footer-navigation-first {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
 }
 
-.footer-navigation-item{font-style: normal;
+.footer-navigation-item {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;}
+  line-height: 20px;
+}
