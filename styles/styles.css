@@ -3,7 +3,6 @@
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/inter-400.woff2) format("woff2");
-
   font-display: swap;
 }
 
@@ -23,13 +22,19 @@
   font-display: swap;
 }
 
+:root {
+  --color-pink: #FEAFC3;
+  --color-gray: #2D3440;
+}
+
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  background-color: #FEAFC3;
-  color: #2D3440;
+  background-color: var(--color-pink);
+  color: var(--color-gray);
 }
 
 /* ! РЕШИТЬ */
@@ -52,7 +57,7 @@ body {
 .number {
   font-weight: 700;
   text-decoration: none;
-  color: #2D3440;
+  color: var(--color-gray);
 }
 
 .navigation-link {
