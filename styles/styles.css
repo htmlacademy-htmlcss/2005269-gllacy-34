@@ -1,58 +1,81 @@
 @font-face {
-  font-family: "Inter", sans-serif;
-  src: url(../fonts/inter-400.woff2) format("woff2"),;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
+  src: url(../fonts/inter-400.woff2) format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter", sans-serif;
-  src: url(../fonts/inter-700.woff2) format("woff2"),;
+  font-family: "Inter";
+  src: url(../fonts/inter-700.woff2) format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter", sans-serif;
-  src: url(../fonts/inter-900.woff2) format("woff2"),;
+  font-family: "Inter";
+  src: url(../fonts/inter-900.woff2) format("woff2");
   font-style: normal;
   font-weight: 900;
   font-display: swap;
 }
 
-body{
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+:root {
+  --color-pink: #FEAFC3;
+  --color-gray: #2D3440;
+  --color-light-gray: #565C66;
+  --color-white: #FCFCFC;
+  --background-color-white: rgba(252, 252, 252, 0.3);
+}
+
+
+body {
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 400;
-  background-color: #FEAFC3;
-  color: #2D3440;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--color-pink);
+  color: var(--color-gray);
 }
 
-
-h2{
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-}
 
 /* HEADER */
 
-.page-header{
-
-}
-
-.number{
+.number {
   font-weight: 700;
   text-decoration: none;
-  color: #2D3440;
+  color: inherit;
 }
 
-.navigation-link{
+.page-navigation {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-link {
   text-decoration: none;
+  color: inherit;
+}
+
+.search {
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+}
+
+.entry {
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+}
+
+
+.basket {
+  font-size: 14px;
+  line-height: 20px;
   color: inherit;
 }
 
@@ -60,86 +83,202 @@ h2{
 
 /* СЛАЙДЫ */
 
-.title-ice-cream{
+.title-ice-cream {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
-.description-ice-cream{
-  font-weight: 400;
+.description-ice-cream {
   font-size: 18px;
   line-height: 24px;
 }
 
-.order{
-  font-weight: 700;
-  line-height: 20px;}
-
-/* ПОДАРКИ */
-.present-first{
-  background-image: url("../images/малина фото.png");
-  background-repeat: no-repeat;
-}
-
-.present-second{
-  background-image: url("../images/маршмеллоу фото.png");
-  background-repeat: no-repeat;
-}
-
-.take-present{
+.order {
   font-weight: 700;
   line-height: 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-h3{
+/* ПОДАРКИ */
+.information {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.present-first {
+  background-image: url("../images/present-raspberry.png");
+  background-repeat: no-repeat;
+}
+
+.present-berry, .present-marschmellow{
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
-.info-present{
-  font-weight: 400;
+
+.present-second {
+  background-image: url("../images/present-marshmallow.png");
+  background-repeat: no-repeat;
+}
+
+.take-present {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.info-present {
+  font-size: 16px;
+  line-height: 22px;  
+  color: var(--color-light-gray);
   }
 /* ВЫБОР МОРОЖЕНОГО */
 
+.name-ice-cream {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.name-information {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-light-gray);
+}
+
+.price{
+  font-weight: 700;
+  font-size: 20px;
+}
+
 /* ПРЕИМУЩЕСТВА */
 
-.advantages{
-  background-image: url("../images/вафля.png");
+.advantages {
+  background-image: url("../images/waffle.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
+.advantages-item{
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-light-gray);
+}
+
 /* СЕРВИРОВКА */
-.ways-10{
-  background-image: url("../images/сервировка.png");
+.ways-10 {
+  background-image: url("../images/serving.png");
   background-repeat: no-repeat;
   width: 570px;
 }
 
-/* РАССЫЛКА */
-.delivery{
-  background-image: url("../images/почтовый фон.png");
+.new-blog {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-light-gray);
+}
+
+/* ДОСТАВКА */
+.delivery {
+  background-image: url("../images/postal-background.png");
   background-repeat: no-repeat;
-  
+}
+
+.delivery-form-info {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.base-form{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* РАССЫЛКА */
+
+.info-mailing{
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-light-gray);
+}
+
+.mailing-submit {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
 }
 
 /* ФОРМА ОБРАТНОЙ РАССЫЛКИ */
-.map-address{
-  background-image: url("../images/мороженое-обратная-связь.jpg");
+.map-address {
+  background-image: url("../images/ice-cream-feedback.jpg");
   background-repeat: no-repeat;
+}
+
+.time-address {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feedback {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-white);
 }
 
 /* FOOTER */
 
-.footer-navigation-first{
+.footer-navigation-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
 }
 
-.footer-navigation-item{font-style: normal;
+.footer-navigation-item {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;}
+  line-height: 20px;
+}
+
+.footer-htmlacademy {
+  text-decoration: none;
+}
+
+
+/* CATALOG */
+
+.breadcrumbs-link {
+  text-decoration: underline;
+}
+
+.select {
+  background-color: var(--background-color-white);
+}
+
+.price-for-ice {
+  background-color: var(--background-color-white);
+}
+
+.fat {
+  background-color: var(--background-color-white);
+}
+
+.content-fillers {
+  background-color: var(--background-color-white);
+}
+
+.submit-filter {
+  background-color: var(--background-color-white);
+}
+
+/* ОБЩИЕ СТИЛИ */
+
+.none-dec {
+  text-decoration: none;
+}
