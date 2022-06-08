@@ -72,9 +72,6 @@ body {
   color: inherit;
 }
 
-.none-dec {
-  text-decoration: none;
-}
 
 .basket {
   font-size: 14px;
@@ -256,6 +253,10 @@ line-height: 20px;
 
 /* CATALOG */
 
+.breadcrumbs-link {
+  text-decoration: underline;
+}
+
 .select {
   background-color: var(--background-color-white);
 }
@@ -274,4 +275,10 @@ line-height: 20px;
 
 .submit-filter {
   background-color: var(--background-color-white);
+}
+
+/* ОБЩИЕ СТИЛИ */
+
+.none-dec {
+  text-decoration: none;
 }
