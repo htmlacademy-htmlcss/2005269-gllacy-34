@@ -25,43 +25,60 @@
 :root {
   --color-pink: #FEAFC3;
   --color-gray: #2D3440;
+  --color-light-gray: #565C66;
+  --color-white: #FCFCFC;
+  --background-color-white: rgba(252, 252, 252, 0.3);
 }
 
 
 body {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   background-color: var(--color-pink);
   color: var(--color-gray);
 }
 
-/* ! РЕШИТЬ */
-
-/* h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-} */
-
-/* h2 {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-} */
 
 /* HEADER */
 
 .number {
   font-weight: 700;
   text-decoration: none;
-  color: var(--color-gray);
+  color: inherit;
+}
+
+.page-navigation {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navigation-link {
   text-decoration: none;
+  color: inherit;
+}
+
+.search {
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+}
+
+.entry {
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+}
+
+.none-dec {
+  text-decoration: none;
+}
+
+.basket {
+  font-size: 14px;
+  line-height: 20px;
   color: inherit;
 }
 
@@ -76,19 +93,33 @@ body {
 }
 
 .description-ice-cream {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
 
 .order {
   font-weight: 700;
-  line-height: 20px;}
+  line-height: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 /* ПОДАРКИ */
+.information {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
 .present-first {
   background-image: url("../images/present-raspberry.png");
   background-repeat: no-repeat;
+}
+
+.present-berry, .present-marschmellow{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .present-second {
@@ -98,13 +129,33 @@ body {
 
 .take-present {
   font-weight: 700;
+  font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .info-present {
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;  
+  color: var(--color-light-gray);
   }
 /* ВЫБОР МОРОЖЕНОГО */
+
+.name-ice-cream {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.name-information {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-light-gray);
+}
+
+.price{
+  font-weight: 700;
+  font-size: 20px;
+}
 
 /* ПРЕИМУЩЕСТВА */
 
@@ -114,6 +165,12 @@ body {
   background-size: 100% auto;
 }
 
+.advantages-item{
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-light-gray);
+}
+
 /* СЕРВИРОВКА */
 .ways-10 {
   background-image: url("../images/serving.png");
@@ -121,11 +178,41 @@ body {
   width: 570px;
 }
 
-/* РАССЫЛКА */
+.new-blog {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-light-gray);
+}
+
+/* ДОСТАВКА */
 .delivery {
   background-image: url("../images/postal-background.png");
   background-repeat: no-repeat;
-  
+}
+
+.delivery-form-info {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.base-form{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* РАССЫЛКА */
+
+.info-mailing{
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-light-gray);
+}
+
+.mailing-submit {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
 }
 
 /* ФОРМА ОБРАТНОЙ РАССЫЛКИ */
@@ -134,9 +221,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.time-address {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feedback {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-white);
+}
+
 /* FOOTER */
 
-.footer-navigation-first {
+.footer-navigation-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -148,4 +247,31 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.footer-htmlacademy {
+  text-decoration: none;
+}
+
+
+/* CATALOG */
+
+.select {
+  background-color: var(--background-color-white);
+}
+
+.price-for-ice {
+  background-color: var(--background-color-white);
+}
+
+.fat {
+  background-color: var(--background-color-white);
+}
+
+.content-fillers {
+  background-color: var(--background-color-white);
+}
+
+.submit-filter {
+  background-color: var(--background-color-white);
 }

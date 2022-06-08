@@ -27,9 +27,9 @@
       </ul>
     </nav>
     <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
-    <a class="search visually-hidden">Поиск</a>
-    <a class="entry" href="#">Вход</a>
-    <a class="basket" href="#">2 товара</a>
+    <a class="search visually-hidden none-dec" href="#">Поиск</a>
+    <a class="entry none-dec" href="#">Вход</a>
+    <a class="basket none-dec" href="#">2 товара</a>
   </header>
 
   <!-- * MAIN -->
@@ -37,10 +37,10 @@
     <header class="title-catalog">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link none-dec" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <a class="breadcrumbs-link none-dec">Каталог</a>
         </li>
       </ul>
       <h1>Сливочное мороженое</h1>
@@ -56,7 +56,7 @@
         </select>
       </div>
 
-      <div>
+      <div class="price-for-ice">
         <p>Цена: 100 ₽ – 500 ₽</p>
       </div>
 
@@ -71,10 +71,10 @@
       <section class="content-fillers">Наполнители:
         <label><input type="checkbox" name="chocolate" value="chocolate">шоколадные</label>
         <label><input type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">сахарные посыпки</label> 
-        <label><input type="checkbox" name="fruits" value="фрукты">fruits</label>
-        <label><input type="checkbox" name="syrups" value="сиропы">syrups</label>
-        <label><input type="checkbox" name="jams" value="джемы">jams</label>
-        <button type="submit">Применить</button>
+        <label><input type="checkbox" name="fruits" value="fruits">фрукты</label>
+        <label><input type="checkbox" name="syrups" value="syrups">сиропы</label>
+        <label><input type="checkbox" name="jams" value="jams">джемы</label>
+        <button class="submit-filter" type="submit">Применить</button>
       </div>
       </section>
     </form>
@@ -83,79 +83,85 @@
     <section class="types-ice-cream">
       <ul class="types-ice-cream-list">
         <li class="types-ice-cream-item">
-          <img src="images/raspberry.jpg" weight="168" height="168" alt="Мороженое со вкусом клубники"></img>
-          <a>Малинка</a>
-          <p>Сливочное мороженое с малиновым джемом</p>
+          <img alt="Мороженое со вкусом клубники" weight="168" height="168" src="images/raspberry.jpg"></img>
+          <b class="name-ice-cream">Малинка</b>
+          <p class="name-information">Сливочное мороженое с малиновым джемом</p>
           <span class="price">310 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button>
         </li>
         <li class="types-ice-cream-item">
-          <img src="images/pistachio.jpg" weight="168" height="168" alt="Мороженое со вкусом фисташки"></img>
-          <a>Фисташка</a>
-          <p>Фисташковый пломбир с кусочками шоколада</p>
+          <img alt="Мороженое со вкусом фисташки" weight="168" height="168" src="images/pistachio.jpg"></img>
+          <b class="name-ice-cream">Фисташка</b>
+          <p class="name-information">Фисташковый пломбир с кусочками шоколада</p>
           <span class="price">340 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button>
         </li>
         <li class="types-ice-cream-item"></li>
-          <img src="images/blueberry.jpg" weight="168" height="168" alt="Мороженое со вкусом черники"></img>
-          <a>Черника</a>
-          <p>Крем-брюле с черничным джемом</p>
+          <img alt="Мороженое со вкусом черники" weight="168" height="168" src="images/blueberry.jpg"></img>
+          <b class="name-ice-cream">Черника</b>
+          <p class="name-information">Крем-брюле
+            с черничным джемом</p>
             <span class="price">330 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button>
         <li class="types-ice-cream-item">
-          <img src="images/bubble-gum.jpg" weight="168" height="168" alt="Мороженое со вкусом бабл-гам"></img>
-          <h4>Бабл-гам</a>
-          <p>Ванильный пломбир со сладкой посыпкой</p>
+          <img alt="Мороженое со вкусом бабл-гам" weight="168" height="168" src="images/bubble-gum.jpg"></img>
+          <b class="name-ice-cream">Бабл-гам</b>
+          <p class="name-information">Ванильный пломбир со сладкой посыпкой</p>
           <span class="price">320 ₽/кг</span>
         <button type="button"><a class="visiually-hidden">Купить</a></button>
         </li>
+
+        <!-- TODO ДЕЛАЮ -->
         <li class="types-ice-cream-item">          
           <img src="images/blackberry.jpg" weight="168" height="168" alt="Мороженое Ежевика">
-          <a>Ежевика</a>
+          <b class="name-ice-cream">Ежевика</b>
           <p>Сливочное мороженое с ежевичным джемом</p>
           <span class="price">330 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
           <img src="images/banana.jpg" weight="168" height="168" alt="Мороженое Банан">
-          <a>Банан</a>
+          <b class="name-ice-cream">Банан</b>
           <p>Сливочный пломбир с банановым вкусом</p>
           <span class="price">340 ₽/кг</span>
-          <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li class="types-ice-cream-item">                    <a>Шоколадка</a>
-          <p>Классический            <img src="images/шоколадка.jpg" weight="168" height="168" alt="Мороженое Шоколадка">шоколадный пломбир</p>
+          <button type="button"><a class="visiually-hidden">Купить</a></button>
+        </li>
+        <li class="types-ice-cream-item">
+          <img src="images/choco.jpg" weight="168" height="168" alt="Мороженое Шоколадка">                    
+          <b class="name-ice-cream">Шоколадка</b>
+          <p>Классический шоколадный пломбир</p>
           <span class="price">270 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
           <img src="images/raspberry.jpg" weight="168" height="168" alt="Мороженое Клубничка">
-          <a>Клубничка</a>
+          <b class="name-ice-cream">Клубничка</b>
           <p>Сливочный пломбир с клубничным вкусом</p>
           <span class="price">330 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
           <img src="images/lemon.jpg" weight="168" height="168" alt="Мороженое Лимон">
-          <a>Лимон</a>
+          <b class="name-ice-cream">Лимон</b>
           <p>Освежающий лимонный сорбет</p>
           <span class="price">310 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
           <img src="images/menthol.jpg" weight="168" height="168" alt="Мороженое Ментол">
-          <a>Ментол</a>
+          <b class="name-ice-cream">Ментол</b>
           <p>Сливочный пломбир с ментоловым сиропом</p>
           <span class="price">320 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
           <img src="images/nut.jpg" weight="168" height="168" alt="Мороженое Орешек">
-          <a>Орешек</a>
+          <b class="name-ice-cream">Орешек</b>
           <p>Фисташковый пломбир с шоколадным сиропом</p>
           <span class="price">360 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
         <li class="types-ice-cream-item">          
           <img src="images/creme-brulee.jpg" weight="168" height="168" alt="Мороженое Крем-брюле">
-          <a>Крем-брюле</a>
+          <b class="name-ice-cream">Крем-брюле</b class="name-ice-cream">
           <p>Классическое крем-брюле</p>
           <span class="price">280 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li><a class="view" href="#">Показать еще</a></li>
+        <li><a class="view none-dec" href="#">Показать еще</a></li>
       </ul>
     </section>
 
@@ -166,22 +172,22 @@
         </a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link pagination-current">1</a>
+        <a class="pagination-link pagination-current new-blog">1</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link" href="#">2</a>
+        <a class="pagination-link new-blog none-dec" href="#">2</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link" href="#">3</a>
+        <a class="pagination-link new-blog none-dec" href="#">3</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link" href="#">4</a>
+        <a class="pagination-link new-blog none-dec" href="#">4</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link" href="#">5</a>
+        <a class="pagination-link new-blog none-dec" href="#">5</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link pagination-next" href="#">
+        <a class="pagination-link pagination-next none-dec" href="#">
           <span class="visually-hidden">Следующая страница</span>
         </a>
       </li>
@@ -199,10 +205,10 @@
       </ul>
       <div class="footer-navigation">
         <ul class="footer-navigation-list">
-          <li class="footer-navigation-item"><a class="footer-anchors" href="#">Для поставщиков</a></li>
-          <li class="footer-navigation-item"><a class="footer-anchors" href="#">О производстве<</a>/li>
-          <li class="footer-navigation-item"><a class="footer-anchors" href="#">Наши документы<</a>/li>
-          <li class="footer-navigation-item"><a class="footer-anchors" href="#">Экологические с</a>тандарты</li>
+          <li class="footer-navigation-title"><a class="footer-anchors none-dec" href="#">Для поставщиков</a></li>
+          <li class="footer-navigation-item"><a class="footer-anchors none-dec" href="#">О производстве</a></li>
+          <li class="footer-navigation-item"><a class="footer-anchors none-dec" href="#">Наши документы</a></li>
+          <li class="footer-navigation-item"><a class="footer-anchors none-dec" href="#">Экологические стандарты</a></li>
         </ul>
       </div>
       <div class="html-academy-anchor">
