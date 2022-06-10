@@ -23,6 +23,7 @@
 }
 
 :root {
+  --color-present-pink: #FF7799;
   --color-pink: #FEAFC3;
   --color-gray: #2D3440;
   --color-light-gray: #565C66;
@@ -30,6 +31,9 @@
   --background-color-white: rgba(252, 252, 252, 0.3);
 }
 
+html {
+  height: 100%;
+}
 
 body {
   font-family: 'Inter';
@@ -39,10 +43,30 @@ body {
   line-height: 24px;
   background-color: var(--color-pink);
   color: var(--color-gray);
+  display: flex;
+  flex-direction: column;
 }
 
 
 /* HEADER */
+
+.page-header {
+  margin: 0 auto;
+  display: flex;
+  flex: space-between;
+}
+
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-navigation {
+  width: 431px;
+  display: flex;
+  justify-content: space-between;
+}
 
 .number {
   font-weight: 700;
@@ -53,6 +77,8 @@ body {
 .page-navigation {
   font-size: 16px;
   line-height: 20px;
+  width: 553px;
+
 }
 
 .navigation-link {
@@ -81,6 +107,11 @@ body {
 
 /* MAIN PAGE */
 
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 /* СЛАЙДЫ */
 
 .title-ice-cream {
@@ -102,10 +133,26 @@ body {
 }
 
 /* ПОДАРКИ */
+.present {
+  display: flex;
+  justify-content: space-between;
+}
+
+.present-list {
+  /* display: flex;
+  justify-content: space-between; */
+  list-style-type: none;
+}
+
 .information {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+}
+
+.present-item {
+  width: 570px;
+  background-color: var(--color-present-pink);
 }
 
 .present-first {
@@ -133,10 +180,20 @@ body {
 
 .info-present {
   font-size: 16px;
-  line-height: 22px;  
+  line-height: 22px;
   color: var(--color-light-gray);
   }
 /* ВЫБОР МОРОЖЕНОГО */
+
+.types-ice-cream-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.types-ice-cream-item {
+  width: 270px;
+  list-style-type: none;
+}
 
 .name-ice-cream {
   font-weight: 700;
@@ -230,7 +287,23 @@ line-height: 20px;
   color: var(--color-white);
 }
 
+
 /* FOOTER */
+
+.page-footer-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.anchors-footer {
+  /* width: 1170px;
+  margin: 0 auto;
+} */
+}
+
+.footer-navigation-list {
+  list-style-type: none;
+}
 
 .footer-navigation-title {
   font-style: normal;
@@ -249,6 +322,8 @@ line-height: 20px;
 .footer-htmlacademy {
   text-decoration: none;
 }
+
+
 
 
 /* CATALOG */

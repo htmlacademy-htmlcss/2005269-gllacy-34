@@ -25,12 +25,15 @@
           </li>
         </ul>
       </nav>
-      <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
-      <a class="search visually-hidden none-dec" href="#">Поиск</a>
-      <a class="entry none-dec" href="#">Вход</a>
-      <a class="basket none-dec" href="#">2 товара</a>
 
+      <div class="right-navigation">
+        <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
+        <a class="search visually-hidden none-dec" href="#">Поиск</a>
+        <a class="entry none-dec" href="#">Вход</a>
+        <a class="basket none-dec" href="#">2 товара</a>
+      </div>
       <!-- * ПОПАП - КОРЗИНА  -->
+      <!-- ! ДОДЕЛАТЬ
       <div class="pop-up-basket">
         <h3 class="title-basket">Корзина</h3>
         <ul class="basket-list">
@@ -38,18 +41,19 @@
 
           </li>
           <li class="basket-item">
-            
+
           </li>
         </ul>
         <button type="submit">
           Оформить заказ
         </button>
         <b>Итого: 790 ₽</b>
-      </div>
+      </div> -->
 
     </header>
     <!-- * MAIN -->
     <main class="main-index">
+      <div class="wrapper">
       <!-- * СЛАЙДЫ -->
       <ul class="header-select-list">
 
@@ -61,25 +65,25 @@
             <a class="anchor-back" href="#">
               <span class="visually-hidden">Предыдующая картинка</span>
             </a>
-  
+
             <img src="Мороженое" href="#">
-      
+
             <a class="anchor-next" href="#">
               <span class="visually-hidden">Следующая картинка</span>
             </a>
         </li>
-
-        <li class="header-select-second">
+        <!-- ! ВЕРНУТЬ ПЕРЕД ПРОВЕРКОЙ! -->
+        <!-- <li class="header-select-second">
           <h1 class="title-ice-cream">Сливочное мороженое со вкусом банана</h1>
-          <p class="description-ice-cream">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение 
+          <p class="description-ice-cream">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
             даже в самый жаркий летний день.  </p>
           <a class="order">Заказать</a>
             <a class="anchor-back" href="#">
               <span class="visually-hidden">Предыдующая картинка</span>
             </a>
-  
+
             <img src="Мороженое" href="#">
-      
+
             <a class="anchor-next" href="#">
               <span class="visually-hidden">Следующая картинка</span>
             </a>
@@ -87,21 +91,20 @@
 
         <li class="header-select-third">
           <h1 class="title-ice-cream">Карамельный пломбир с маршмеллоу</h1>
-          <p class="description-ice-cream">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет 
+          <p class="description-ice-cream">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
             сердца сладкоежек всех возрастов. </p>
           <a class="order">Заказать</a>
           <a class="anchor-back" href="#">
             <span class="visually-hidden">Предыдующая картинка</span>
           </a>
           <img src="Мороженое" href="#">
-    
+
           <a class="anchor-next" href="#">
             <span class="visually-hidden">Следующая картинка</span>
           </a>
-        </li>
-      </div>
+        </li> -->
 
-      
+
 
       <ul class="select-anchors">
         <li class="select-acnhors-item"><input value="first-picture" name="select-image" type="radio"></li>
@@ -131,7 +134,7 @@
               <p class="info-present">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
               <a class="take-present">Хочу подарок</a>
             </section>
-          </li> 
+          </li>
         </ul>
       </section>
 
@@ -153,13 +156,13 @@
             <span class="price">340 ₽/кг</span>
             <button type="button"><a class="visiually-hidden">Купить</a></button>
           </li>
-          <li class="types-ice-cream-item"></li>
+          <li class="types-ice-cream-item">
             <img alt="Мороженое со вкусом черники" weight="168" height="168" src="images/blueberry.jpg"></img>
             <b class="name-ice-cream">Черника</b>
-            <p class="name-information">Крем-брюле
-              с черничным джемом</p>
-              <span class="price">330 ₽/кг</span>
+            <p class="name-information">Крем-брюле с черничным джемом</p>
+            <span class="price">330 ₽/кг</span>
             <button type="button"><a class="visiually-hidden">Купить</a></button>
+          </li>
           <li class="types-ice-cream-item">
             <img alt="Мороженое со вкусом бабл-гам" weight="168" height="168" src="images/bubble-gum.jpg"></img>
             <b class="name-ice-cream">Бабл-гам</b>
@@ -174,14 +177,14 @@
       <section class="advantages">
         <h2 class="information">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">Всё наше мороженое изготавливается на собственном производстве с 
+          <li class="advantages-item">Всё наше мороженое изготавливается на собственном производстве с
             использованием современного оборудования и проверенных временем технологий.</li>
           <li class="advantages-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
             и добавки произведены из натурального сырья.</li>
           <li class="advantages-item">Закупка ингредиентов производится только
             у проверенных фермерских хозяйств, с которыми
             нас связывает долговременное сотрудничество.</li>
-          <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке, 
+          <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке,
             который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
@@ -238,10 +241,12 @@
         <p class="time-address">(с 10 до 20 ежедневно)</p>
         <a href="#" class="feedback">Форма обратной связи</a>
       </section>
+    </div>
     </main>
 
     <!-- * FOOTER -->
     <footer class="page-footer">
+      <div class="wrapper">
         <section class="anchors-footer">
           <div class="social-network">
             <a href="https://t.me/htmlacademy"><span class="visually-hidden telegram">Телеграм</span></a>
@@ -261,7 +266,9 @@
             <span>Сделано в <a href="https://htmlacademy.ru/" class="footer-htmlacademy">.html academy</a> © 2021</span>
           </div>
         </section>
+      </div>
     </footer>
 
   </body>
 </html>
+<li></li>

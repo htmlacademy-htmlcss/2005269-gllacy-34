@@ -10,6 +10,7 @@
 
   <!-- * HEADER -->
   <header class="page-header">
+    <div class="wrapper">
     <nav class="page-navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -25,12 +26,16 @@
           <a class="navigation-link" href="#">О компании</a>
         </li>
       </ul>
+    </div>
     </nav>
-    <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
-    <a class="search visually-hidden none-dec" href="#">Поиск</a>
-    <a class="entry none-dec" href="#">Вход</a>
-    <a class="basket none-dec" href="#">2 товара</a>
-  </header>
+
+    <div class="right-navigation">
+      <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
+      <a class="search visually-hidden none-dec" href="#">Поиск</a>
+      <a class="entry none-dec" href="#">Вход</a>
+      <a class="basket none-dec" href="#">2 товара</a>
+    </div>
+    </header>
 
   <!-- * MAIN -->
   <main class="page-main">
@@ -70,7 +75,7 @@
 
       <section class="content-fillers">Наполнители:
         <label><input type="checkbox" name="chocolate" value="chocolate">шоколадные</label>
-        <label><input type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">сахарные посыпки</label> 
+        <label><input type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">сахарные посыпки</label>
         <label><input type="checkbox" name="fruits" value="fruits">фрукты</label>
         <label><input type="checkbox" name="syrups" value="syrups">сиропы</label>
         <label><input type="checkbox" name="jams" value="jams">джемы</label>
@@ -78,7 +83,7 @@
       </div>
       </section>
     </form>
-      
+
     <!-- * ВЫБОР МОРОЖЕНОГО -->
     <section class="types-ice-cream">
       <ul class="types-ice-cream-list">
@@ -112,13 +117,13 @@
         </li>
 
         <!-- TODO ДЕЛАЮ -->
-        <li class="types-ice-cream-item">          
+        <li class="types-ice-cream-item">
           <img src="images/blackberry.jpg" weight="168" height="168" alt="Мороженое Ежевика">
           <b class="name-ice-cream">Ежевика</b>
           <p class="name-information">Сливочное мороженое с ежевичным джемом</p>
           <span class="price">330 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li class="types-ice-cream-item">          
+        <li class="types-ice-cream-item">
           <img src="images/banana.jpg" weight="168" height="168" alt="Мороженое Банан">
           <b class="name-ice-cream">Банан</b>
           <p class="name-information">Сливочный пломбир с банановым вкусом</p>
@@ -126,36 +131,36 @@
           <button type="button"><a class="visiually-hidden">Купить</a></button>
         </li>
         <li class="types-ice-cream-item">
-          <img src="images/choco.jpg" weight="168" height="168" alt="Мороженое Шоколадка">                    
+          <img src="images/choco.jpg" weight="168" height="168" alt="Мороженое Шоколадка">
           <b class="name-ice-cream">Шоколадка</b>
           <p class="name-information">Классический шоколадный пломбир</p>
           <span class="price">270 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li class="types-ice-cream-item">          
+        <li class="types-ice-cream-item">
           <img src="images/raspberry.jpg" weight="168" height="168" alt="Мороженое Клубничка">
           <b class="name-ice-cream">Клубничка</b>
           <p class="name-information">Сливочный пломбир с клубничным вкусом</p>
           <span class="price">330 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li class="types-ice-cream-item">          
+        <li class="types-ice-cream-item">
           <img src="images/lemon.jpg" weight="168" height="168" alt="Мороженое Лимон">
           <b class="name-ice-cream">Лимон</b>
           <p class="name-information">Освежающий лимонный сорбет</p>
           <span class="price">310 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li class="types-ice-cream-item">          
+        <li class="types-ice-cream-item">
           <img src="images/menthol.jpg" weight="168" height="168" alt="Мороженое Ментол">
           <b class="name-ice-cream">Ментол</b>
           <p class="name-information">Сливочный пломбир с ментоловым сиропом</p>
           <span class="price">320 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li class="types-ice-cream-item">          
+        <li class="types-ice-cream-item">
           <img src="images/nut.jpg" weight="168" height="168" alt="Мороженое Орешек">
           <b class="name-ice-cream">Орешек</b>
           <p class="name-information">Фисташковый пломбир с шоколадным сиропом</p>
           <span class="price">360 ₽/кг</span>
           <button type="button"><a class="visiually-hidden">Купить</a></button></li>
-        <li class="types-ice-cream-item">          
+        <li class="types-ice-cream-item">
           <img src="images/creme-brulee.jpg" weight="168" height="168" alt="Мороженое Крем-брюле">
           <b class="name-ice-cream">Крем-брюле</b class="name-ice-cream">
           <p class="name-information">Классическое крем-брюле</p>
@@ -197,6 +202,7 @@
 
   <!-- * FOOTER -->
   <footer class="page-footer">
+    <div class="wrapper">
     <section class="anchors-footer">
       <ul class="social-network">
         <li><a href="https://t.me/htmlacademy"><span class="visually-hidden telegram">Телеграм</span></a></li>
@@ -215,6 +221,7 @@
         <a class="html-academy-main" href="https://htmlacademy.ru/"><img src="images/svg-images/logo_htmlacademy.svg" alt="логотип html academy" width="93" height="27"></a>
         <span>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
       </div>
+    </div>
     </section>
 
 </footer>
