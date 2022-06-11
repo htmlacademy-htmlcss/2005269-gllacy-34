@@ -133,16 +133,14 @@ body {
 }
 
 /* ПОДАРКИ */
-.present {
-  display: flex;
-  justify-content: space-between;
-}
 
 .present-list {
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
 }
+
+
 
 .information {
   font-weight: 900;
@@ -150,10 +148,14 @@ body {
   line-height: 46px;
 }
 
-.present-item {
+.present-first, .present-second {
   width: 570px;
   background-color: var(--color-present-pink);
 }
+
+/* .present-item {
+
+} */
 
 .present-first {
   background-image: url("../images/present-raspberry.png");
