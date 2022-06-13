@@ -175,6 +175,8 @@ body {
 .social-network {
   display: flex;
   list-style-type: none;
+  padding: 0;
+  width: 356px;
 }
 
 /* ПОДАРКИ */
@@ -249,8 +251,10 @@ body {
 /* ВЫБОР МОРОЖЕНОГО */
 
 .types-ice-cream-list {
+  padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .types-ice-cream-item {
@@ -439,6 +443,23 @@ line-height: 20px;
 
 .submit-filter {
   background-color: var(--background-color-white);
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.space-first {
+  width: 168px;
+}
+
+.space-third {
+  width: 168px;
+  display: flex;
+
 }
 
 /* ОБЩИЕ СТИЛИ */
