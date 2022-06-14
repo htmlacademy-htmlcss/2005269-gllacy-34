@@ -23,6 +23,7 @@
 }
 
 :root {
+  --color-pink-button: #FF2F64;
   --color-present-pink: #FF7799;
   --color-pink: #FEAFC3;
   --color-gray: #2D3440;
@@ -207,6 +208,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
 }
 
 .present-list {
@@ -226,17 +228,20 @@ body {
 }
 
 .information-choice {
-  display: flex;
-  justify-content: center;
+  width: 527px;
+  display: block;
+  text-align: center;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 80px auto 56px auto;
 }
 
 .present-first, .present-second {
   width: 570px;
   height: 268px;
   background-color: var(--color-present-pink);
+  border-radius: 16px;
 }
 
 
@@ -276,15 +281,18 @@ body {
 /* ВЫБОР МОРОЖЕНОГО */
 
 .types-ice-cream-list {
-  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 0 80px 0;
+  padding: 0;
 }
 
 .types-ice-cream-item {
   width: 270px;
+  height: 332px;
   list-style-type: none;
+
 }
 
 .name-ice-cream {
@@ -310,16 +318,32 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  margin: 56px 0;
+}
+
+.background-white {
+  margin: 24px;
+  background-color: var(--color-white);
+  display: block;
+  border-radius: 16px;
 }
 
 .advantages-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 1042px;
 }
 
 .advantages {
   background-image: url("../images/waffle.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  margin-bottom: 80px;
+  align-items: center;
+  display: flex;
 }
 
 .advantages-item{
@@ -334,18 +358,32 @@ body {
   background-image: url("../images/serving.png");
   background-repeat: no-repeat;
   width: 570px;
+  height: 224px;
+  padding-left: 32px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 100%;
+}
+
+.serving {
+  width: 303px;
 }
 
 .new-blog {
   font-size: 16px;
   line-height: 20px;
   color: var(--color-light-gray);
+  margin-top: 32px;
+  margin-bottom: 12px;
 }
 
 /* ДОСТАВКА */
 .delivery {
-  background-image: url("../images/delivery.jpg");
+  background-image: url("../images/delivery2.png");
   background-repeat: no-repeat;
+  border-radius: 16px;
+  height: 534px;
+  background-size: 100% 100%;
 }
 
 .delivery-form-info {
@@ -369,6 +407,7 @@ body {
 .mailing {
   background-image: url('../images/postal-background.png');
   width: 570px;
+  border-radius: 16px;
 }
 
 .info-mailing{
@@ -387,6 +426,7 @@ line-height: 20px;
 .map-address {
   background-image: url("../images/ice-cream-feedback.jpg");
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .address-info {
@@ -440,9 +480,6 @@ line-height: 20px;
 .footer-htmlacademy {
   text-decoration: none;
 }
-
-
-
 
 /* CATALOG */
 
