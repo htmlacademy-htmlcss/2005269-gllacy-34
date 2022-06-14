@@ -61,7 +61,7 @@ body {
 
 .navigation-list {
   padding: 0;
-  margin: 0;
+  margin: 24px 0;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -71,6 +71,13 @@ body {
   width: 431px;
   display: flex;
   justify-content: space-between;
+}
+
+.right-navigation a {
+  display: block;
+  align-self: center;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .number {
@@ -83,12 +90,22 @@ body {
   font-size: 16px;
   line-height: 20px;
   width: 553px;
+}
 
+.navigation-item {
+  align-self: center;
+}
+
+.navigation-link-logo {
+  display: block;
+  padding: 0 16px 0 0;
 }
 
 .navigation-link {
   text-decoration: none;
   color: inherit;
+  display: block;
+  padding: 8px 16px;
 }
 
 .search {
@@ -115,6 +132,10 @@ body {
 .wrapper {
   width: 1170px;
   margin: 0 auto;
+}
+
+.header-choice-icecream {
+  margin-bottom: 80px;
 }
 
 /* СЛАЙДЫ */
@@ -176,6 +197,7 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0;
   width: 356px;
 }
 
@@ -200,6 +222,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0 0 55px 0;
 }
 
 .information-choice {
@@ -210,12 +233,9 @@ body {
   line-height: 46px;
 }
 
-.present-first {
-  margin-right: 30px;
-}
-
 .present-first, .present-second {
   width: 570px;
+  height: 268px;
   background-color: var(--color-present-pink);
 }
 
@@ -223,17 +243,22 @@ body {
 .present-first {
   background-image: url("../images/present-raspberry.png");
   background-repeat: no-repeat;
+  margin-right: 30px;
+  background-position: 100% 100%;
 }
 
 .present-berry, .present-marschmellow{
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .present-second {
   background-image: url("../images/present-marshmallow.png");
   background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .take-present {
@@ -469,5 +494,12 @@ line-height: 20px;
 }
 
 .visually-hidden {
-
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
