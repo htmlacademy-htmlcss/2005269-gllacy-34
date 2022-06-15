@@ -44,8 +44,8 @@ body {
   line-height: 24px;
   background-color: var(--color-pink);
   color: var(--color-gray);
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 
@@ -54,6 +54,7 @@ body {
 .page-header {
   margin: 0 auto;
   display: flex;
+  width: 1170px;
 }
 
 .page-navigation {
@@ -292,7 +293,6 @@ body {
   width: 270px;
   height: 332px;
   list-style-type: none;
-
 }
 
 .name-ice-cream {
@@ -408,12 +408,14 @@ body {
   background-image: url('../images/postal-background.png');
   width: 570px;
   border-radius: 16px;
+
 }
 
 .info-mailing{
   font-size: 16px;
   line-height: 22px;
   color: var(--color-light-gray);
+  margin: 32px 32px 42px 32px;
 }
 
 .mailing-submit {
