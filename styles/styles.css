@@ -278,6 +278,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: var(--color-light-gray);
+  margin-top: 24px;
+  width: 371px;
   }
 /* ВЫБОР МОРОЖЕНОГО */
 
@@ -383,12 +385,24 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   height: 534px;
-  /* background-size: 100% 100%; */
+  display: flex;
+  margin-top: 80px;
 }
 
 .delivery-form-info {
   font-size: 16px;
   line-height: 22px;
+}
+/* ! поменять отступ сверху */
+.delivery-form {
+  background-color: var(--color-white);
+  padding: 40px;
+  width: 500px;
+  height: 406px;
+  box-sizing: border-box;
+  margin-left: 135px;
+  margin-top: 64px;
+  border-radius: 8px;
 }
 
 .base-form{
@@ -408,7 +422,7 @@ body {
   background-image: url('../images/postal-background.png');
   width: 570px;
   border-radius: 16px;
-
+  height: 224px;
 }
 
 .info-mailing{
@@ -419,10 +433,21 @@ body {
 }
 
 .mailing-submit {
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 14px;
 }
+
+.email-input {
+  width: 332px;
+  padding: 0;
+}
+
+.footer-mailing {
+  margin-left: 32px;
+}
+
 
 /* ФОРМА ОБРАТНОЙ РАССЫЛКИ */
 .map-address {
@@ -448,6 +473,18 @@ line-height: 20px;
   color: var(--color-white);
 }
 
+.delivery-info {
+  margin-left: 100px;
+  margin-top: 167px;
+}
+
+.information {
+  width: 356px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0;
+}
 
 /* FOOTER */
 
