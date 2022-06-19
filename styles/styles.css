@@ -37,6 +37,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -44,16 +45,21 @@ body {
   line-height: 24px;
   background-color: var(--color-pink);
   color: var(--color-gray);
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 
 /* HEADER */
 
 .page-header {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* width: 1170px; */
+}
+
+.page-head {
   display: flex;
+  justify-content: space-between;
 }
 
 .page-navigation {
@@ -140,11 +146,16 @@ body {
 }
 
 /* СЛАЙДЫ */
+.right-select {
+  display: flex;
+  align-items: center;
+}
 
 .title-ice-cream {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  margin: 0 0 24px 0;
 }
 
 .header-select-list {
@@ -157,6 +168,12 @@ body {
   font-size: 18px;
   line-height: 24px;
   width: 414px;
+  margin: 0 0 48px 0;
+}
+
+.left-select {
+  margin-left: 70px;
+  margin-top: 136px;
 }
 
 .header-select-first {
@@ -182,6 +199,9 @@ body {
   line-height: 20px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 26px;
+  background: var(--color-white);
+  padding: 12px 32px;
 }
 
 .footer-anchors {
@@ -202,6 +222,15 @@ body {
   width: 356px;
 }
 
+.first-title-slide {
+  margin-right: 41px;
+}
+
+.second-little-slide {
+  margin-right: 41px;
+}
+
+
 /* ПОДАРКИ */
 .present {
   display: flex;
@@ -219,12 +248,13 @@ body {
 }
 
 .information-delivery {
-  display: flex;
-  justify-content: center;
+  width: 434px;
+  display: block;
+  text-align: center;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 0 0 55px 0;
+  margin: 0 auto 55px auto;
 }
 
 .information-choice {
@@ -239,9 +269,10 @@ body {
 
 .present-first, .present-second {
   width: 570px;
-  height: 268px;
+  min-height: 268px;
   background-color: var(--color-present-pink);
   border-radius: 16px;
+  padding: 36px 0 0 36px;
 }
 
 
@@ -256,7 +287,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  margin: 0;
   padding: 0;
 }
 
@@ -267,17 +297,26 @@ body {
 }
 
 .take-present {
+  display: block;
+  width: 112px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+  background: var(--color-white);
+  padding: 12px 32px;
+  border-radius: 26px;
+  margin-top: 28px;
 }
 
 .info-present {
   font-size: 16px;
   line-height: 22px;
-  color: var(--color-light-gray);
-  }
+  color: var(--color-gray);
+  margin: 28px 0 0 0;
+  width: 371px;
+}
+
 /* ВЫБОР МОРОЖЕНОГО */
 
 .types-ice-cream-list {
@@ -290,9 +329,12 @@ body {
 
 .types-ice-cream-item {
   width: 270px;
-  height: 332px;
+  min-height: 332px;
   list-style-type: none;
+}
 
+.types-ice-cream-item img{
+  border-radius: 100%;
 }
 
 .name-ice-cream {
@@ -335,15 +377,19 @@ body {
   padding: 0;
   margin: 0;
   width: 1042px;
+  /* display: grid;
+  gap: 15px */
+
 }
 
 .advantages {
-  background-image: url("../images/waffle.png");
+  background-image: url("../images/waffle-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin-bottom: 80px;
   align-items: center;
   display: flex;
+  border-radius: 16px;
 }
 
 .advantages-item{
@@ -358,7 +404,7 @@ body {
   background-image: url("../images/serving.png");
   background-repeat: no-repeat;
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   padding-left: 32px;
   box-sizing: border-box;
   border-radius: 16px;
@@ -382,13 +428,36 @@ body {
   background-image: url("../images/delivery3.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
-  height: 534px;
-  /* background-size: 100% 100%; */
+  min-height: 534px;
+  display: flex;
+  margin-top: 80px;
+}
+
+.delivery-submit {
+  background: var(--color-pink-button);
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  margin-left: 174px;
+  cursor: pointer;
 }
 
 .delivery-form-info {
   font-size: 16px;
   line-height: 22px;
+}
+
+
+.delivery-form {
+  background-color: var(--color-white);
+  padding: 40px;
+  width: 500px;
+  min-height: 406px;
+  box-sizing: border-box;
+  margin-left: 135px;
+  align-self: center;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .base-form{
@@ -408,30 +477,56 @@ body {
   background-image: url('../images/postal-background.png');
   width: 570px;
   border-radius: 16px;
+  min-height: 224px;
 }
 
 .info-mailing{
   font-size: 16px;
   line-height: 22px;
   color: var(--color-light-gray);
+  margin: 32px 32px 42px 32px;
 }
 
 .mailing-submit {
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 14px;
 }
 
-/* ФОРМА ОБРАТНОЙ РАССЫЛКИ */
+.email-input {
+  width: 332px;
+  padding: 0;
+}
+
+.footer-mailing {
+  margin-left: 32px;
+}
+
+
+/* АДРЕС МАГАЗИНА И ОБРАТНАЯ СВЯЗЬ */
+
 .map-address {
-  background-image: url("../images/ice-cream-feedback.jpg");
+  background-image: url("../images/feedback.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+  min-height: 492px;
+  padding: 0;
+  display:flex;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .address-info {
   background-color: var(--color-white);
   width: 343px;
+  min-height: 364px;
+  padding-left: 40px;
+  padding-top: 40px;
+  margin-left: 64px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
 }
 
 .time-address {
@@ -440,12 +535,68 @@ line-height: 20px;
 }
 
 .feedback {
+  display: block;
+  width: 250px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: var(--color-white);
+  background-color: var(--color-pink-button);
+  margin: 32px 0 40px 0;
+  text-align: center;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
 }
 
+.delivery-info {
+  margin-left: 100px;
+  margin-top: 167px;
+}
+
+.information {
+  width: 356px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0;
+}
+
+.addres-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 179px;
+  margin: 0;
+  color: var(--color-light-gray);
+}
+
+.city {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-gray);
+  margin: 12px 0 0 0;
+  width: 263px;
+}
+
+.orders-telephone {
+  width: 203px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 24px 0 0 0;
+  color: var(--color-light-gray);
+}
+
+.time-address {
+  margin: 0;
+  width: 160px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-light-gray);
+}
 
 /* FOOTER */
 
@@ -479,6 +630,22 @@ line-height: 20px;
 
 .footer-htmlacademy {
   text-decoration: none;
+}
+
+.html-academy-anchor {
+
+}
+
+.html-academy-main {
+  margin-top: 48px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.html-made {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 /* CATALOG */

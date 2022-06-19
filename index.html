@@ -8,49 +8,55 @@
   <body>
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
     <!-- * HEADER -->
-    <header class="page-header">
-      <nav class="page-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link-logo" href="index.html"><img class="logo" src="images/svg-images/title-logo.svg" alt="Логотип GllacyShop" width="137" height="55"></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка и оплата</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О компании</a>
-          </li>
-        </ul>
-      </nav>
 
-      <div class="right-navigation">
-        <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
-        <a class="search visually-hidden none-dec" href="#">Поиск</a>
-        <a class="entry none-dec" href="#">Вход</a>
-        <a class="basket none-dec" href="#">2 товара</a>
-      </div>
+    <header class="page-header">
+      <div class="wrapper">
+        <section class="page-head">
+        <nav class="page-navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link-logo" href="index.html"><img class="logo" src="images/svg-images/title-logo.svg" alt="Логотип GllacyShop" width="137" height="55"></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О компании</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="right-navigation">
+          <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
+          <a class="search visually-hidden none-dec" href="#">Поиск</a>
+          <a class="entry none-dec" href="#">Вход</a>
+          <a class="basket none-dec" href="#">2 товара</a>
+        </div>
+
       <!-- * ПОПАП - КОРЗИНА  -->
       <!-- ! ДОДЕЛАТЬ
-      <div class="pop-up-basket">
-        <h3 class="title-basket">Корзина</h3>
-        <ul class="basket-list">
-          <li class="basket-item">
+        <div class="pop-up-basket">
+          <h3 class="title-basket">Корзина</h3>
+          <ul class="basket-list">
+            <li class="basket-item">
 
-          </li>
-          <li class="basket-item">
+            </li>
+            <li class="basket-item">
 
-          </li>
-        </ul>
-        <button type="submit">
-          Оформить заказ
-        </button>
-        <b>Итого: 790 ₽</b>
-      </div> -->
-
+            </li>
+          </ul>
+          <button type="submit">
+            Оформить заказ
+          </button>
+          <b>Итого: 790 ₽</b>
+        </div> -->
+        </section>
+      </div>
     </header>
+
     <!-- * MAIN -->
     <main class="main-index">
     <div class="wrapper">
@@ -69,11 +75,15 @@
               <span class="visually-hidden">Предыдующая картинка</span>
             </a>
 
-            <img alt="Мороженое" height="507" width="306" src="images/title-first-slide.png">
+            <img class="first-title-slide" alt="Мороженое с клубничным джемом" height="507" width="306" src="images/title-first-slide.png">
 
             <a class="anchor-next" href="#">
               <span class="visually-hidden">Следующая картинка</span>
             </a>
+
+            <img class="second-little-slide" alt="Мороженое со вкусом банана" src="images/second-little-slide.png">
+
+            <img class="third-little-slide" alt="Мороженое с карамелью и маршмеллоу" src="images/third-little-slide.png">
           </section>
         </li>
 
@@ -161,28 +171,28 @@
       <section class="types-ice-cream">
         <ul class="types-ice-cream-list">
           <li class="types-ice-cream-item">
-            <img alt="Мороженое со вкусом клубники" width="168" height="168" src="images/raspberry.jpg">
+            <img alt="Мороженое со вкусом клубники" width="168" height="168" src="images/raspberry.png">
             <b class="name-ice-cream">Малинка</b>
             <p class="name-information">Сливочное мороженое с малиновым джемом</p>
             <span class="price">310 ₽/кг</span>
             <button type="button"><a class="visiually-hidden">Купить</a></button>
           </li>
           <li class="types-ice-cream-item">
-            <img alt="Мороженое со вкусом фисташки" width="168" height="168" src="images/pistachio.jpg">
+            <img alt="Мороженое со вкусом фисташки" width="168" height="168" src="images/pistachio.png">
             <b class="name-ice-cream">Фисташка</b>
             <p class="name-information">Фисташковый пломбир с кусочками шоколада</p>
             <span class="price">340 ₽/кг</span>
             <button type="button"><a class="visiually-hidden">Купить</a></button>
           </li>
           <li class="types-ice-cream-item">
-            <img alt="Мороженое со вкусом черники" width="168" height="168" src="images/blueberry.jpg">
+            <img alt="Мороженое со вкусом черники" width="168" height="168" src="images/blueberry.png">
             <b class="name-ice-cream">Черника</b>
             <p class="name-information">Крем-брюле с черничным джемом</p>
             <span class="price">330 ₽/кг</span>
             <button type="button"><a class="visiually-hidden">Купить</a></button>
           </li>
           <li class="types-ice-cream-item">
-            <img alt="Мороженое со вкусом бабл-гам" width="168" height="168" src="images/bubble-gum.jpg">
+            <img alt="Мороженое со вкусом бабл-гам" width="168" height="168" src="images/bubble-gum.png">
             <b class="name-ice-cream">Бабл-гам</b>
             <p class="name-information">Ванильный пломбир со сладкой посыпкой</p>
             <span class="price">320 ₽/кг</span>
@@ -212,19 +222,21 @@
 
       <!-- * 10 СПОСОБОВ СЕРВИРОВКИ -->
       <section class="ways-and-mailing">
-      <section class="ways-10">
-        <p class="new-blog">Новое в нашем блоге</p>
-        <h3 class="serving">10 способов сервировки фруктовых щербетов
-          к столу</h3>
-      </section>
+        <section class="ways-10">
+          <p class="new-blog">Новое в нашем блоге</p>
+          <h3 class="serving">10 способов сервировки фруктовых щербетов
+            к столу</h3>
+        </section>
 
-      <!-- * РАССЫЛКА E-MAIL -->
-      <section class="mailing">
-        <p class="info-mailing">Подпишитесь на нашу сладкую рассылку и будьте всегда
+        <!-- * РАССЫЛКА E-MAIL -->
+        <section class="mailing">
+          <p class="info-mailing">Подпишитесь на нашу сладкую рассылку и будьте всегда
           в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <input type="text" placeholder="email@example.com">
-        <button class="mailing-submit" type="submit">Отправить</button>
-      </section>
+          <div class="footer-mailing">
+            <input class="email-input" type="text" placeholder="email@example.com">
+            <button class="mailing-submit" type="submit">Отправить</button>
+          </div>
+        </section>
       </section>
 
       <!-- * ДОСТАВКА МОРОЖЕНОГО -->
@@ -250,20 +262,20 @@
                 <input type="text" placeholder="ул. Большая Конюшенная, 19/8" id="address" required>
               </label>
             </p>
-            <button type="submit">Отправить</button>
+            <button class="delivery-submit" type="submit">Отправить</button>
           </form>
         </section>
       </div>
 
-      <!-- * АДРЕС МАГАЗИНА -->
+      <!-- * АДРЕС МАГАЗИНА И ОБРАТНАЯ СВЯЗЬ -->
       <section class="map-address">
         <section class="address-info">
-          <p class="info-present">Адрес главного офиса и офлайн-магазина:</p>
-          <h4 class="price">наб. реки Карповки, 5 лит П, Санкт-Петербург</h4>
-          <p class="info-present">Для заказов по телефону:</p>
-          <h4 class="price"><a class="number" href="tel:78005558628">+7 (812) 812-12-12</a></h4>
+          <p class="addres-title">Адрес главного офиса и офлайн-магазина:</p>
+          <h4 class="city">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</h4>
+          <p class="orders-telephone">Для заказов по телефону:</p>
+          <h4 class="city"><a class="number" href="tel:78005558628">+7 (812) 812-12-12</a></h4>
           <p class="time-address">(с 10 до 20 ежедневно)</p>
-          <a href="#" class="feedback">Форма обратной связи</a>
+          <a href="#" class="feedback none-dec">Форма обратной связи</a>
         </section>
       </section>
     </div>
@@ -287,8 +299,8 @@
             </ul>
           </div>
           <div class="html-academy-anchor">
-            <a class="html-academy-main" href="https://htmlacademy.ru/"><img src="images/svg-images/logo_htmlacademy.svg" width="93" height="27" alt="логотип html academy"></a>
-            <span>Сделано в <a href="https://htmlacademy.ru/" class="footer-htmlacademy">.html academy</a> © 2021</span>
+            <a class="html-academy-main" href="https://htmlacademy.ru/"><img src="images/svg-images/logo_htmlacademy.svg" class="html-academy-image" width="93" height="27" alt="логотип html academy"></a>
+            <span class="html-made">Сделано в <a href="https://htmlacademy.ru/" class="footer-htmlacademy">.html academy</a> © 2021</span>
           </div>
         </section>
       </div>
