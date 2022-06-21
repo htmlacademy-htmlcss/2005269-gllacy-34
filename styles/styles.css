@@ -123,11 +123,28 @@ body {
 }
 
 /* ПОПАП КОРЗИНА*/
+.title-basket {
+  margin: 0 0 32px 0;
+}
+
+.pop-up-basket {
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  width: 441px;
+  border-radius: 4px;
+  padding: 48px;
+  margin-left: auto;
+}
 
 .basket-item {
   display: flex;
-  width: 441px;
   justify-content: space-between;
+}
+
+.basket-item:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
 }
 
 .right-section-basket {
@@ -154,6 +171,12 @@ body {
 
 .weight-basket {
   margin: 0;
+}
+
+.footer-basket {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* MAIN PAGE */
@@ -341,27 +364,40 @@ body {
 
 /* ВЫБОР МОРОЖЕНОГО */
 
-.types-ice-cream-list {
+/* .types-ice-cream-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 0 80px 0;
   padding: 0;
+} */
+
+.types-ice-cream-list {
+  grid-template-columns: 270px 270px 270px 270px;
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  margin-top: 44px;
+  margin-bottom: 16px;
 }
 
 .types-ice-cream-item {
   width: 270px;
   min-height: 332px;
   list-style-type: none;
+  background-color: var(--color-white);
 }
 
 .types-ice-cream-item img{
   border-radius: 100%;
+  display: block;
 }
 
 .name-ice-cream {
   font-weight: 700;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .name-information {
@@ -373,6 +409,10 @@ body {
 .price{
   font-weight: 700;
   font-size: 20px;
+}
+
+.footer-icecream {
+  margin: 0 40px;
 }
 
 /* ПРЕИМУЩЕСТВА */
