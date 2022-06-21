@@ -52,11 +52,6 @@ body {
 
 /* HEADER */
 
-.page-header {
-  /* margin: 0 auto; */
-  /* width: 1170px; */
-}
-
 .page-head {
   display: flex;
   justify-content: space-between;
@@ -127,11 +122,38 @@ body {
   color: inherit;
 }
 
+/* ПОПАП КОРЗИНА*/
+
+.basket-item {
+  display: flex;
+  width: 441px;
+  justify-content: space-between;
+}
+
+.right-section-basket {
+  width: 117px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section-basket {
+  display: flex;
+}
 
 .basket {
   font-size: 14px;
   line-height: 20px;
   color: inherit;
+}
+
+.basket-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.weight-basket {
+  margin: 0;
 }
 
 /* MAIN PAGE */
