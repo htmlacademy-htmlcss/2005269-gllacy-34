@@ -133,7 +133,7 @@ body {
   width: 441px;
   border-radius: 4px;
   padding: 48px;
-  margin-left: auto;
+  position: absolute;
 }
 
 .basket-item {
@@ -445,14 +445,16 @@ body {
   background-color: var(--color-white);
   display: block;
   border-radius: 16px;
+  padding: 0 0 56px 0;
 }
 
 .advantages-list {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 40px 32px;
+  grid-template-columns: 505px 505px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 40px;
   width: 1042px;
 }
 
@@ -551,17 +553,27 @@ body {
 }
 
 .mailing {
-  background-image: url('../images/postal-background.png');
+  background-image: url('../images/background-candy.png');
   width: 570px;
   border-radius: 16px;
   min-height: 224px;
+  padding: 0;
+}
+
+.background-mailing {
+  background-color: var(--color-white);
+  height: 212px;
+  margin: 6px;
+  border-radius: 16px;
+  padding-top:  26px;
+  box-sizing: border-box;
 }
 
 .info-mailing{
   font-size: 16px;
   line-height: 22px;
   color: var(--color-light-gray);
-  margin: 32px 32px 42px 32px;
+  margin: 0 32px 42px 32px;
 }
 
 .mailing-submit {
