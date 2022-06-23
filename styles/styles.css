@@ -264,7 +264,8 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 356px;
+  width: 104px;
+  margin-right: 323px;
 }
 
 .first-title-slide {
@@ -382,7 +383,7 @@ body {
 .types-ice-cream-list {
   grid-template-columns: 270px 270px 270px 270px;
   display: grid;
-  gap: 30px;
+  gap: 91px 30px;
   padding: 0;
   margin: 107px 0 80px 0;
 }
@@ -523,8 +524,30 @@ body {
   line-height: 22px;
 }
 
-.delivery-form {
+.delivery-grid{
   display: grid;
+  grid-template-columns: 117px 287px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  gap: 20px 16px;
+}
+
+.delivery-grid p {
+  margin: 0;
+}
+
+.telephone-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.address-input{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.address-form {
+  grid-column: 1 / -1;
 }
 
 .section-form {
@@ -696,11 +719,19 @@ body {
 
 .anchors-footer {
   display: flex;
-  justify-content: space-between;
+}
+
+.footer-navigation {
+  margin-right: 200px;
 }
 
 .footer-navigation-list {
   list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns:126px 182px;
+  gap: 8px 24px;
+  margin-top: 44px;
 }
 
 .footer-navigation-title {
@@ -726,7 +757,7 @@ body {
 }
 
 .html-academy-main {
-  margin-top: 48px;
+  margin-top: 44px;
   display: block;
   margin-bottom: 15px;
 }
