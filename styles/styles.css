@@ -813,6 +813,12 @@ body {
 
 /* ОБЩИЕ СТИЛИ */
 
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
 .none-dec {
   text-decoration: none;
 }
