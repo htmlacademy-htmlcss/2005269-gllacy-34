@@ -72,7 +72,10 @@ body {
 .right-navigation {
   width: 431px;
   display: flex;
-  justify-content: space-between;
+}
+
+.navigation-icon {
+  margin-left: 16px;
 }
 
 .right-navigation a {
@@ -80,6 +83,7 @@ body {
   align-self: center;
   min-width: 32px;
   min-height: 32px;
+
 }
 
 .number {
