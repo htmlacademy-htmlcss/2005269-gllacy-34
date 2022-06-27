@@ -173,6 +173,12 @@ body {
   padding: 8px 16px;
 }
 
+.navigation-condition::current {
+  background: var(--color-pink-button);
+  color: var(--color-white);
+  border-radius: 30px;
+}
+
 .search {
   font-size: 14px;
   line-height: 20px;
@@ -640,6 +646,46 @@ body {
   padding: 0;
 } */
 
+.path-buy-svg {
+  fill: var(--color-white);
+}
+
+.rect-buy-svg {
+  fill: var(--color-pink-button);
+}
+
+.svg-buy:hover .path-buy-svg {
+  fill: var(--color-gray);
+}
+
+.svg-buy:hover .rect-buy-svg {
+  fill: var(--color-white);
+}
+
+.svg-buy:active .path-buy-svg {
+  fill: var(--color-gray);
+}
+
+.svg-buy:active .rect-buy-svg{
+  fill: var(--color-pink);
+}
+
+
+.svg-buy {
+  background: var(--color-pink-button);
+  outline: 2px solid var(--color-pink-button);
+  border-radius: 26px;
+  height: 32px;
+}
+
+.svg-buy:focus {
+  background: var(--color-pink-button);
+  outline: 2px solid var(--color-gray);
+  border-radius: 26px;
+  height: 32px;
+}
+
+
 .types-ice-cream-list {
   grid-template-columns: 270px 270px 270px 270px;
   display: grid;
@@ -679,6 +725,7 @@ body {
 .price{
   font-weight: 700;
   font-size: 20px;
+  align-self: center;
 }
 
 .footer-icecream {
@@ -1091,10 +1138,20 @@ body {
 
 /* CATALOG */
 
+.title-choice-catalog {
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
+.header-choice-catalog {
+  display: flex;
+}
+
 .breadcrumbs {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 32px 0 0 0;
 }
 
 /* .breadcrumbs-link-catalog {
@@ -1120,8 +1177,16 @@ body {
   top: -3px;
 }
 
-.select {
+.backround-white-choice {
   background-color: var(--background-color-white);
+}
+
+/* .select {
+  background-color: var(--background-color-white);
+} */
+
+.select-sort{
+  display: block;
 }
 
 .price-for-ice {
@@ -1217,6 +1282,7 @@ body {
   outline: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  border-style: none;
 }
 
 .additional-button:hover {
@@ -1230,6 +1296,7 @@ body {
   outline: 4px solid  var(--color-pink-button);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  border-style: none;
 }
 
 .additional-button:active {
@@ -1243,6 +1310,7 @@ body {
   outline: 2px solid  var(--color-gray);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  border-style: none;
 }
 
 .additional-button:focus {
@@ -1256,13 +1324,12 @@ body {
   outline: 2px solid var(--color-gray);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  border-style: none;
 }
 
-/* .button {
-  border: none;
+.button {
   cursor: pointer;
-  display: inline-block;
-} */
+}
 
 .none-dec {
   text-decoration: none;

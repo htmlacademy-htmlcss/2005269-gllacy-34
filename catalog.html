@@ -81,7 +81,7 @@
             <a class="breadcrumbs-link breadcrumbs-link-catalog">Каталог</a>
           </li>
         </ul>
-        <h1>Сливочное мороженое</h1>
+        <h1 class="title-choice-catalog">Сливочное мороженое</h1>
       </div>
     </header>
 
@@ -89,24 +89,29 @@
     <div class="wrapper">
     <section class="choice-catalog">
       <form class="choice-catalog-form" action="https://echo.htmlacademy.ru">
+        <div class="header-choice-catalog">
 
-      <div class="select">Сортировка:
-        <select id="select">
-          <option>По популярности</option>
-        </select>
-      </div>
+          <div class="select">
+            <span class="select-sort">Сортировка:</span>
+            <div class="backround-white-choice">
+            <select id="select">
+              <option>По популярности</option>
+            </select>
+          </div>
+          </div>
 
-      <div class="price-for-ice">
-        <p>Цена: 100 ₽ – 500 ₽</p>
-      </div>
+          <div class="price-for-ice">
+            <p>Цена: 100 ₽ – 500 ₽</p>
+          </div>
 
-      <section class="fat">
-        Жирность:
-        <label><input type="radio" name="fat-radio" value="0 %">0 %</label>
-        <label><input type="radio" name="fat-radio" value="до 10%">до 10 %</label>
-        <label><input type="radio" name="fat-radio" value="до 30%">до 30 %</label>
-        <label><input type="radio" name="fat-radio" value="выше 30%">выше 30 %</label>
-      </section>
+          <section class="fat">
+            Жирность:
+            <label><input type="radio" name="fat-radio" value="0 %">0 %</label>
+            <label><input type="radio" name="fat-radio" value="до 10%">до 10 %</label>
+            <label><input type="radio" name="fat-radio" value="до 30%">до 30 %</label>
+            <label><input type="radio" name="fat-radio" value="выше 30%">выше 30 %</label>
+          </section>
+        </div>
 
       <form class="content-fillers">Наполнители:
         <label><input type="checkbox" name="chocolate" value="chocolate">шоколадные</label>
