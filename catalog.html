@@ -92,8 +92,8 @@
         <div class="header-choice-catalog">
 
           <div class="select">
-            <span class="select-sort">Сортировка:</span>
-            <div class="backround-white-choice">
+            <span class="select-text">Сортировка:</span>
+            <div class="backround-white-choice select-choice">
             <select id="select">
               <option>По популярности</option>
             </select>
@@ -101,16 +101,20 @@
           </div>
 
           <div class="price-for-ice">
-            <p>Цена: 100 ₽ – 500 ₽</p>
+            <span class="select-text">Цена: 100 ₽ – 500 ₽</span>
+            <section class="backround-white-choice">
+            <input type="range" min="100" max="500" step="1">
           </div>
 
-          <section class="fat">
-            Жирность:
-            <label><input type="radio" name="fat-radio" value="0 %">0 %</label>
-            <label><input type="radio" name="fat-radio" value="до 10%">до 10 %</label>
-            <label><input type="radio" name="fat-radio" value="до 30%">до 30 %</label>
-            <label><input type="radio" name="fat-radio" value="выше 30%">выше 30 %</label>
-          </section>
+          <div class="fat">
+            <span class="select-text">Жирность:</span>
+            <section class="backround-white-choice fat-choice">
+              <label class="fat-select"><input type="radio" name="fat-radio" value="0 %">0 %</label>
+              <label class="fat-select"><input type="radio" name="fat-radio" value="до 10%">до 10 %</label>
+              <label class="fat-select"><input type="radio" name="fat-radio" value="до 30%">до 30 %</label>
+              <label class="fat-select"><input type="radio" name="fat-radio" value="выше 30%">выше 30 %</label>
+            </section>
+          </div>
         </div>
 
       <form class="content-fillers">Наполнители:
