@@ -1463,6 +1463,82 @@ body {
 .modal-feedback {
   position: relative;
   margin: auto;
-  padding: 40px;
+  /* padding: 40px; */
   background-color: #ffffff;
+  width: 570px;
+  min-height: 545px;
+  padding: 64px 64px 0 64px;
+  box-sizing: border-box;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/svg-images/Cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-input {
+  width: 442px;
+  /* margin-top: 32px;
+  margin-bottom: 16px; */
+  min-height: 48px;
+  display: block;
+  margin: 32px 0 16px 0;
+  box-sizing: border-box;
+  padding: 14px 0 14px 16px ;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.modal-input::placeholder {
+  color: #B9B9B9;
+}
+
+.field-group {
+  margin-bottom: 16px;
+}
+
+.modal-input-freedom {
+  min-height: 149px;
+  max-height: 149px;
+  max-width: 442px;
+  min-width: 442px;
+  font-family: inherit;
+}
+
+/* .modal-input-freedom::placeholder {
+  transform: translateY(-50px);
+} */
+
+.modal-submit {
+  background: var(--color-pink-button);
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-top: 32px;
 }
