@@ -102,7 +102,7 @@
 
           <div class="price-for-ice">
             <span class="select-text">Цена: 100 ₽ – 500 ₽</span>
-            <section class="backround-white-choice">
+            <section class="backround-white-choice select-input">
             <input type="range" min="100" max="500" step="1">
           </div>
 
@@ -117,15 +117,21 @@
           </div>
         </div>
 
-      <form class="content-fillers">Наполнители:
-        <label><input type="checkbox" name="chocolate" value="chocolate">шоколадные</label>
-        <label><input type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">сахарные посыпки</label>
-        <label><input type="checkbox" name="fruits" value="fruits">фрукты</label>
-        <label><input type="checkbox" name="syrups" value="syrups">сиропы</label>
-        <label><input type="checkbox" name="jams" value="jams">джемы</label>
-        <button class="submit-filter button" type="submit">Применить</button>
+        <div class="footer-choice-catalog">
+          <span class="select-text">Наполнители:</span>
+            <section class="choice-and-button">
+              <section class="backround-white-choice checkbox-choice">
+                <label><input type="checkbox" name="chocolate" value="chocolate">шоколадные</label>
+                <label><input type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">сахарные посыпки</label>
+                <label><input type="checkbox" name="fruits" value="fruits">фрукты</label>
+                <label><input type="checkbox" name="syrups" value="syrups">сиропы</label>
+                <label><input type="checkbox" name="jams" value="jams">джемы</label>
+              </section>
+              <button class="submit-filter button" type="submit">Применить</button>
+            </section>
+
+        </div>
       </form>
-      </section>
     </section>
     </div>
 
@@ -140,7 +146,9 @@
             <p class="name-information">Сливочное мороженое с малиновым джемом</p>
             <div class="footer-icecream-price">
               <span class="price">310 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -151,7 +159,9 @@
             <p class="name-information">Фисташковый пломбир с кусочками шоколада</p>
             <div class="footer-icecream-price">
               <span class="price">340 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -162,7 +172,9 @@
             <p class="name-information">Крем-брюле с черничным джемом</p>
             <div class="footer-icecream-price">
               <span class="price">330 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -173,7 +185,9 @@
             <p class="name-information">Ванильный пломбир со сладкой посыпкой</p>
             <div class="footer-icecream-price">
               <span class="price">320 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -184,7 +198,9 @@
               <p class="name-information">Сливочное мороженое с ежевичным джемом</p>
               <div class="footer-icecream-price">
                 <span class="price">330 ₽/кг</span>
-                <button type="button"><span class="visiually-hidden">Купить</span></button>
+                <a class="button svg-buy">
+                  <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                  <span class="visually-hidden">Купить</span></a>
               </div>
           </div>
         </li>
@@ -195,7 +211,9 @@
             <p class="name-information">Сливочный пломбир с банановым вкусом</p>
             <div class="footer-icecream-price">
               <span class="price">340 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -206,7 +224,9 @@
             <p class="name-information">Классический шоколадный пломбир</p>
             <div class="footer-icecream-price">
               <span class="price">270 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -217,7 +237,9 @@
             <p class="name-information">Сливочный пломбир с клубничным вкусом</p>
             <div class="footer-icecream-price">
               <span class="price">330 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -228,7 +250,9 @@
             <p class="name-information">Освежающий лимонный сорбет</p>
             <div class="footer-icecream-price">
               <span class="price">310 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -239,7 +263,9 @@
             <p class="name-information">Сливочный пломбир с ментоловым сиропом</p>
             <div class="footer-icecream-price">
               <span class="price">320 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -250,7 +276,9 @@
             <p class="name-information">Фисташковый пломбир с шоколадным сиропом</p>
             <div class="footer-icecream-price">
               <span class="price">360 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
@@ -261,7 +289,9 @@
             <p class="name-information">Классическое крем-брюле</p>
             <div class="footer-icecream-price">
               <span class="price">280 ₽/кг</span>
-              <button type="button"><span class="visiually-hidden">Купить</span></button>
+              <a class="button svg-buy">
+                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
+                <span class="visually-hidden">Купить</span></a>
             </div>
           </div>
         </li>
