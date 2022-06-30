@@ -909,6 +909,55 @@ body {
 }
 
 /* ДОСТАВКА */
+.form-label {
+  position: relative;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #2D3440;;
+  display: block;
+}
+
+.tooltip-text {
+  background: #FFFFFF;
+  color: #565C66;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  padding: 10px 8px;
+  width: 169px;
+  border: 1px solid #B9B9B9;
+  position: absolute;
+  margin-left: 24px;
+  top: -100%;
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text{
+  display: block;
+}
+
+
+.tooltip {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
+}
+
 .delivery {
   background-image: url("../images/delivery3.jpg");
   background-repeat: no-repeat;
@@ -992,6 +1041,23 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.input-base-form {
+
+}
+
+.base-form input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+.input-date::placeholder {
+  width: 85px;
 }
 
 /* РАССЫЛКА */
@@ -1172,6 +1238,7 @@ body {
 .anchors-footer {
   display: flex;
   padding-bottom: 48px;
+  justify-content: space-between;
 }
 
 .footer-navigation {
@@ -1261,6 +1328,7 @@ body {
 
 .breadcrumbs-link {
   text-decoration: underline;
+  color: var(--color-gray);
 }
 
 .breadcrumbs li:not(:first-child) {
@@ -1383,7 +1451,7 @@ body {
   border-style: none;
 }
 
-.submit-filter-disabled {
+.submit-filter:disabled {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -1711,10 +1779,6 @@ body {
 
   font-family: inherit;
 }
-
-/* .modal-input-freedom::placeholder {
-  transform: translateY(-50px);
-} */
 
 .modal-submit {
   background: var(--color-pink-button);
