@@ -34,7 +34,7 @@
           <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
 
           <a class="search none-dec" href="#">
-            <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-first" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-first" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
               d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0
               0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
@@ -353,15 +353,15 @@
 
             <div class="delivery-grid">
               <p class="date-form base-form">
-                <label for="date">Дата</label>
-                  <input id="date" type="date" required>
+                <label class="title-delivery-form" for="date">Дата</label>
+                  <input class="input-date" id="date" type="text" placeholder="01.04.2020" required>
               </p>
               <p class="tel-form base-form">
-                <label for="telephone">Телефон</label>
+                <label class="title-delivery-form" for="telephone">Телефон</label>
                   <input class="telephone-input" type="text" placeholder="+7 800 999-00-00" id="telephone" required>
               </p>
               <p class="address-form base-form">
-                <label for="address">Адрес</label>
+                <label class="title-delivery-form" for="address">Адрес</label>
                   <input class="address-input" type="text" placeholder="ул. Большая Конюшенная, 19/8" id="address" required>
 
               </p>
@@ -422,8 +422,8 @@
       </div>
     </footer>
 
-
-     <div class="modal-container">
+    <!-- ! МОДАЛЬНОЕ ОКНО
+     <div class="modal-container modal-container-close">
       <div class="modal-feedback">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -437,7 +437,8 @@
           </form>
           <button class="modal-submit button additional-button" type="submit">Отправить</button>
         </section>
-      </div>
+      </div> -->
+
     </div>
   </body>
 </html>
