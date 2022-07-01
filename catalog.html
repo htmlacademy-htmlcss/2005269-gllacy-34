@@ -94,17 +94,38 @@
           <div class="select">
             <span class="select-text">Сортировка:</span>
             <div class="backround-white-choice select-choice">
-            <select id="select">
-              <option>По популярности</option>
-            </select>
-          </div>
+              <select id="select">
+                <option>По популярности</option>
+                  <!-- <option>Сначала дешевле</option>
+                  <option>Сначала дороже</option> -->
+              </select>
           </div>
 
-          <div class="price-for-ice">
-            <span class="select-text">Цена: 100 ₽ – 500 ₽</span>
-            <section class="backround-white-choice select-input">
-            <input type="range" min="100" max="500" step="1">
+          <div class="range">
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label">
+                <span class="price-for-ice">Цена:</span>
+                <input class="range-input" type="number" value="100" name="min-price"> ₽ –
+              </label>
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" value="500" name="max-price"> ₽
+              </label>
+            </div>
+
+            <section class="backround-white-range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 40px; width: 56px;">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+            </section>
           </div>
+
 
           <div class="fat">
             <span class="select-text">Жирность:</span>
@@ -121,11 +142,31 @@
           <span class="select-text">Наполнители:</span>
             <section class="choice-and-button">
               <section class="backround-white-choice checkbox-choice">
-                <label><input type="checkbox" name="chocolate" value="chocolate">шоколадные</label>
-                <label><input type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">сахарные посыпки</label>
-                <label><input type="checkbox" name="fruits" value="fruits">фрукты</label>
-                <label><input type="checkbox" name="syrups" value="syrups">сиропы</label>
-                <label><input type="checkbox" name="jams" value="jams">джемы</label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" value="chocolate">
+                  <span class="control-mark"></span>
+                  <span class="control-label">шоколадные</span>
+                </label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="sugar-sprinkles" value="sugar-sprinkles">
+                  <span class="control-mark"></span>
+                  <span class="control-label">сахарные посыпки</span>
+                </label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="fruits" value="fruits">
+                  <span class="control-mark"></span>
+                  <span class="control-label">фрукты</span>
+                </label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="syrups" value="syrups">
+                  <span class="control-mark"></span>
+                  <span class="control-label">сиропы</span>
+                </label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="jams" value="jams">
+                  <span class="control-mark"></span>
+                  <span class="control-label">джемы</span>
+                </label>
               </section>
               <button class="submit-filter button" type="submit">Применить</button>
             </section>
