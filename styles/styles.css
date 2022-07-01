@@ -408,6 +408,7 @@ body {
 .right-select {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .title-ice-cream {
@@ -567,6 +568,46 @@ body {
 .first-title-slide {
   object-fit:contain;
   margin-right: 41px;
+  position: relative;
+}
+
+
+.anchor-next {
+  right: 257px;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+  cursor: pointer;
+  background-image: url("../images/svg-images/arrow-slider-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.anchor-next:hover {
+  background: rgb(252, 252, 252);
+  background-image: url("../images/svg-images/arrow-slider-black.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.anchor-next:active {
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  background: rgba(252, 252, 252, 0.3);
+  background-image: url("../images/svg-images/arrow-slider-black.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-slide {
+  left: 0;
+  position: absolute;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 50%;
+  width: 310px;
+  height: 310px;
 }
 
 .second-little-slide {
@@ -1298,7 +1339,7 @@ body {
 }
 
 .header-choice-catalog {
-  display: flex;
+  /* display: flex; */
 }
 
 .footer-choice-catalog {
@@ -1364,19 +1405,78 @@ body {
 .fat-choice {
   padding: 8px 24px;
   border-radius: 18px;
+  height: 20px;
 }
 
 .fat-select:not(:last-child) {
   margin-right: 16px;
 }
 
+.fat-select {
+  position: relative;
+}
+
+.control-input[type="radio"] + .control-mark-radio {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2D3440;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: #2D3440;
+  border-radius: 50%;
+  content: "";
+}
+
+.fat-select:hover .control-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  content: "";
+}
+
+.fat-select:hover .control-input[type="radio"] + .control-mark-radio{
+  border: 1px solid var(--color-white);
+}
+
+.control-input:disabled .control-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(45, 52, 64, 0.4);
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input:disabled .control-input[type="radio"] + .control-mark-radio{
+  border: 1px solid rgba(45, 52, 64, 0.4);
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 1px;
+  content: "";
+}
 .select-choice {
-  padding: 8px 16px;
-  border-radius: 20px;
+  /* padding: 8px 16px;
+  border-radius: 20px; */
+  display: inline-block;
 }
 
 .select {
-  margin-right: 24px;
+  display: flex;
 }
 
 .range {
@@ -1385,7 +1485,7 @@ body {
 
 .backround-white-range {
   background-color: var(--background-color-white);
-  padding: 19px 16px 17px 16px;
+  padding: 16px;
   border-radius: 20px;
   margin-top: 8px;
 }
@@ -1425,18 +1525,48 @@ body {
   content: url(../images/svg-images/checkbox-disabled-checked.svg);
 }
 
-/* .select-option {
+.select-option {
   position: relative;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   width: 196px;
-  margin-right: auto;
-} */
+  /* margin-right: auto; */
+  /* padding: 8px 16px; */
+  border-radius: 20px;
+  /* background-color: var(--background-color-white); */
+  margin-right: 24px;
+}
+
+.select-control {
+  height: 36px;
+  font-family: 'Inter';
+  font-style: normal;
+  width: 100%;
+  padding: 8px 16px;
+  padding-right: 63px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: var(--background-color-white);
+  background-image: url("../images/svg-images/Arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+  border-radius: 20px;
+  border: none;
+}
+
+.select-control:hover {
+  background-color: rgba(252, 252, 252, 0.5);;
+}
+
+.select-control:focus {
+  outline: 2px solid #FCFCFC;
+}
 
 .range-scale {
   position: relative;
   height: 4px;
-  /* border: 2px solid #565C66; */
   background-color: rgba(86, 92, 102, 0.3);;
   border-radius: 4px;
   width: 164px;
@@ -1536,6 +1666,7 @@ body {
   border-radius: 20px;
   margin-left: 16px;
   border-style: none;
+  border: none;
 }
 
 .submit-filter:hover {
