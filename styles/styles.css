@@ -43,12 +43,23 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  background-color: var(--color-pink);
   color: var(--color-gray);
   /* display: flex;
   flex-direction: column; */
 }
 
+/* BACKGROUND BODY */
+.body-pink {
+  background-color: var(--color-pink);
+}
+
+.body-blue {
+  background-color: #69A9FF;;
+}
+
+.body-yellow {
+  background-color: #FCC850;
+}
 
 /* HEADER */
 
@@ -339,6 +350,73 @@ body {
   right: auto;
   left: 20px;
   margin: auto 0;
+}
+
+/* ПОПАП ВХОД */
+
+.two-sections-entry {
+  display: flex;
+}
+
+.anchor-popover-entry {
+  margin-left: 23px;
+  color: #2D3440;
+}
+
+.popover-entry {
+  left: 0;
+  top: 0;
+  width: 324px;
+  position: absolute;
+  padding: 48px 48px 52px 48px;
+  background-color: var(--color-white);
+  z-index: 2;
+  display: block;
+  border-radius: 4px;
+}
+
+.title-popover-entry {
+  margin: 0 0 32px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.input-popover-entry {
+  display: block;
+  padding: 14px 0 14px 16px;
+  margin: 0 0 16px 0;
+  width: 324px;
+  box-sizing: border-box;
+}
+
+.input-popover-entry::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.input-popover-entry-password {
+  display: block;
+  padding: 14px 0 14px 16px;
+  margin-bottom: 16px;
+  width: 324px;
+  box-sizing: border-box;
+}
+
+.input-popover-entry-password::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+
+
+.left-section-entry {
+  display: inline-block;
 }
 
 /* ПОПАП ПОИСКОВИК */
