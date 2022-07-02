@@ -20,6 +20,9 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-condition" href="catalog.html">Каталог</a>
+              <div class="catalog-popover">
+
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -44,6 +47,12 @@
             <span class="visually-hidden">Поиск</span>
           </a>
 
+
+          <!-- ! ПОПОВЕР ПОИСКОВИК -->
+          <!-- <div class="popover-search">
+            <input class="input-search" type="text" placeholder="Поиск по сайту">
+          </div> -->
+
           <a class="entry none-dec" href="#">
             <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-second" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -65,6 +74,12 @@
               0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/></svg>
             <span class="basket-counter">2 товара</span>
           </a>
+
+          <!-- ! ПОПОВЕР ПУСТОЙ КОРЗИНЫ -->
+          <!-- <div class="popover-empty-basket">
+            <h3 class="title-empty-basket">Ваша корзина пока пуста</h3>
+          </div> -->
+
         </div>
         </section>
       </div>
@@ -89,7 +104,9 @@
               </div>
               <div class="right-section-basket">
                 <b class="price-basket">310 ₽</b>
-                <button class="close-basket">Закрыть</button>
+                <button class="basket-close-button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
               </div>
             </li>
             <li class="basket-item">
@@ -102,12 +119,14 @@
               </div>
               <div class="right-section-basket">
                 <b class="price-basket">480 ₽</b>
-                <button class="close-basket">Закрыть</button>
+                <button class="basket-close-button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
               </div>
             </li>
           </ul>
           <div class="footer-basket">
-            <button class="footer-submit-basket" type="submit">
+            <button class="footer-submit-basket additional-button" type="submit">
               Оформить заказ
             </button>
             <b class="footer-price-basket">Итого: 790 ₽</b>
