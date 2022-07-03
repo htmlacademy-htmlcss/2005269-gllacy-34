@@ -44,8 +44,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: var(--color-gray);
-  /* display: flex;
-  flex-direction: column; */
 }
 
 /* BACKGROUND BODY */
@@ -68,11 +66,6 @@ body {
   justify-content: space-between;
 }
 
-.page-navigation {
-  /* margin-right: 186px;  */
-
-  /* ! gtc */
-}
 
 .navigation-list {
   padding: 0;
@@ -199,13 +192,18 @@ body {
   color: inherit;
   display: block;
   padding: 8px 16px;
+  position: relative;
 }
 
-.navigation-condition::current {
+/* CURRENT ДЛЯ ССЫЛОК В HEADER'E */
+
+.navigation-condition-current {
   background: var(--color-pink-button);
   color: var(--color-white);
   border-radius: 30px;
 }
+
+/* */
 
 .search {
   font-size: 14px;
@@ -352,6 +350,56 @@ body {
   margin: auto 0;
 }
 
+/* ПОПАП КАТАЛОГ */
+
+.catalog-popover {
+   width: 138px;
+  background-color: #FCFCFC;
+  position: absolute;
+  padding: 16px 0 8px 0;
+  margin-top: 8px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+}
+
+.title-catalog-popover {
+  font-weight: 700;
+  margin: 0;
+  margin-left: 16px;
+}
+
+.horizontal-line {
+  border: none;
+  width: 103px;
+  height: 1px;
+  color: #B9B9B9;
+  background-color: #B9B9B9;
+  margin: 8px 0 4px 16px;
+}
+
+.catalog-popovet-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.catalog-popover-item {
+  padding: 6px 16px;
+  cursor: pointer;
+  background: #FCFCFC;
+}
+
+.catalog-popover-item:hover {
+  background: #FFCBD8;
+}
+
+.catalog-popover-item:active {
+  background: #FF7799;
+}
+
+.catalog-popover-current {
+  background: #FF4A78;
+}
+
 /* ПОПАП ВХОД */
 
 .two-sections-entry {
@@ -364,8 +412,8 @@ body {
 }
 
 .popover-entry {
-  left: 0;
-  top: 0;
+  left: -102px;
+  top: 78px;
   width: 324px;
   position: absolute;
   padding: 48px 48px 52px 48px;
@@ -887,9 +935,19 @@ body {
   height: 310px;
 }
 
+.background-slide-second {
+  left: 348px;
+  position: absolute;
+  background-color: rgba(252, 252, 252, 0.2);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
 .second-little-slide {
   margin-right: 41px;
   object-fit:contain;
+  z-index: 2;
 }
 
 .third-little-slide {
