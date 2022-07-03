@@ -944,6 +944,15 @@ body {
   height: 100px;
 }
 
+.background-slide-third {
+  left: 490px;
+  position: absolute;
+  background-color: rgba(252, 252, 252, 0.2);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
 .second-little-slide {
   margin-right: 41px;
   object-fit:contain;
