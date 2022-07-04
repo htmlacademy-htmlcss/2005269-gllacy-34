@@ -37,7 +37,8 @@ html {
 }
 
 body {
-  margin: 0;
+  width: 1366px;
+  margin: 0 auto;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -170,6 +171,18 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.number-address {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .page-navigation {
@@ -609,7 +622,7 @@ body {
 }
 
 .header-choice-icecream {
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 /* СЛАЙДЫ */
@@ -617,6 +630,14 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  left: 82px;
+}
+
+.title-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -18px;
 }
 
 .title-ice-cream {
@@ -630,23 +651,25 @@ body {
   list-style-type: none;
   width: 470px;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .description-ice-cream {
   font-size: 18px;
   line-height: 24px;
   width: 414px;
-  margin: 0 0 48px 0;
+  margin: 0 0 56px 0;
 }
 
 .left-select {
   margin-left: 70px;
-  margin-top: 136px;
+  /* margin-top: 136px; */
+  margin-top: 117px;
 }
 
 .header-select-first {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 1170px;
 }
 
@@ -680,10 +703,15 @@ body {
   justify-content: space-between;
   width: 1170px;
   color: var(--color-gray);
+
 }
 
 .select-acnhors-item{
-  margin: 0 8px;
+  margin-right: 4px;
+}
+
+.select-acnhors-item:not(:first-child) {
+  margin-left: 4px;
 }
 
 .select-anchors {
@@ -827,7 +855,8 @@ body {
 
 
 .anchor-next {
-  right: 257px;
+  box-sizing: border-box;
+  right: 16px;
   position: absolute;
   width: 38px;
   height: 38px;
@@ -875,7 +904,8 @@ body {
 }
 
 .anchor-back {
-  right: 567px;
+  box-sizing: border-box;
+  right: 330px;
   position: absolute;
   width: 38px;
   height: 38px;
@@ -986,7 +1016,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 0 auto 55px auto;
+  margin: 0 auto 36px auto;
 }
 
 .information-choice {
@@ -996,12 +1026,12 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 80px auto 56px auto;
+  margin: 64px auto 56px auto;
 }
 
 .present-first, .present-second {
   width: 570px;
-  min-height: 268px;
+  height: 268px;
   background-color: var(--color-present-pink);
   border-radius: 16px;
   padding: 36px 0 48px 36px;
@@ -1135,7 +1165,7 @@ body {
   display: grid;
   gap: 91px 30px;
   padding: 0;
-  margin: 107px 0 80px 0;
+  margin: 95px 0 80px 0;
 }
 
 .types-ice-cream-item {
@@ -1164,6 +1194,7 @@ body {
   line-height: 22px;
   color: var(--color-light-gray);
   margin: 0 0 16px 0;
+  text-align: center;
 }
 
 .price{
@@ -1245,7 +1276,7 @@ body {
 
 .advantages-second::before {
   position: absolute;
-  content: url(../images/svg-images/advantages-leaf.svg);
+  content: url(../images/svg-images/advantages-cow.svg);
   margin-left: -64px;
 }
 
@@ -1255,7 +1286,7 @@ body {
 
 .advantages-third::before {
   position: absolute;
-  content: url(../images/svg-images/advantages-cow.svg);
+  content: url(../images/svg-images/advantages-leaf.svg);
   margin-left: -64px;
 }
 
@@ -1283,6 +1314,12 @@ body {
 
 .serving {
   width: 303px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 13px;
 }
 
 .new-blog {
@@ -1344,12 +1381,20 @@ body {
 }
 
 .delivery {
-  background-image: url("../images/delivery3.jpg");
+  background-image: url("../images/background-delivery-2.png");
   background-repeat: no-repeat;
   border-radius: 16px;
   min-height: 534px;
   display: flex;
   margin-top: 80px;
+}
+
+.info-present-delivery {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-gray);
+  margin: 23px 0 0 0;
+  width: 371px;
 }
 
 .delivery-submit {
@@ -1412,7 +1457,7 @@ body {
 
 .section-form {
   background-color: var(--color-white);
-  padding: 40px;
+  padding: 22px 40px 40px 40px;
   width: 500px;
   min-height: 406px;
   box-sizing: border-box;
@@ -1426,10 +1471,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-}
-
-.input-base-form {
-
 }
 
 .base-form input::placeholder {
@@ -1473,14 +1514,20 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: var(--color-light-gray);
-  margin: 0 32px 42px 32px;
+  margin: 0 8px 42px 27px;
 }
 
 .mailing-submit {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  margin-left: 14px;
+  margin-top: 3px;
+  margin-left: 346px;
+}
+
+  .form-email-input {
+    display: flex;
+    margin-right: 10px;
 }
 
 .email-input {
@@ -1490,10 +1537,13 @@ body {
   box-sizing: border-box;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
-
+  left: -5px;
+  position: absolute;
 }
 
 .email-input::placeholder {
+
+  font: inherit;
   color: #B9B9B9;
   font-weight: 400;
   font-size: 16px;
@@ -1502,6 +1552,7 @@ body {
 
 .footer-mailing {
   margin-left: 32px;
+  position: relative;
 }
 
 
@@ -1538,7 +1589,7 @@ body {
 .feedback {
   box-sizing: border-box;
   display: inline-block;
-  width: 260px;
+  width: 250px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1608,7 +1659,12 @@ body {
   margin: 0;
   width: 104px;
   align-items: center;
-  margin-right: 323px;
+  margin-right: 310px;
+  margin-left: 5px;
+}
+
+.html-academy-anchor {
+  margin-right: 13px;
 }
 
 .social-network-footer li:not(:last-child){
@@ -1621,13 +1677,14 @@ body {
 }
 
 .anchors-footer {
+  margin-top: 95px;
   display: flex;
   padding-bottom: 48px;
   justify-content: space-between;
 }
 
 .footer-navigation {
-  margin-right: 200px;
+  margin-right: 187px;
 }
 
 .footer-navigation-list {
@@ -1660,13 +1717,15 @@ body {
 }
 
 .footer-htmlacademy {
-  text-decoration: none;
+  text-decoration: underline;
+  padding-bottom: 2px;
+  display: inline-block;
 }
 
 .html-academy-main {
   margin-top: 44px;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 }
 
 .html-made {
@@ -1678,8 +1737,11 @@ body {
 /* CATALOG */
 
 .title-choice-catalog {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   margin-top: 16px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
 }
 
 .header-choice-catalog {
@@ -1692,28 +1754,30 @@ body {
 }
 
 .checkbox-choice {
-  padding: 10px 24px;
+  padding: 10px 10px 7px 24px;
   display: inline-block;
   border-radius: 18px;
-  min-width: 604px;
 }
 
 
 
 .checkbox-choice:not(:last-child) label{
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .breadcrumbs {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 32px 0 0 0;
+  margin: 27px 0 0 0;
 }
 
 .breadcrumbs-link {
   text-decoration: underline;
   color: var(--color-gray);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .breadcrumbs li:not(:first-child) {
@@ -1739,6 +1803,9 @@ body {
   display: block;
   margin-bottom: 8px;
   margin-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .select-input {
@@ -1753,7 +1820,7 @@ body {
 }
 
 .fat-select:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .fat-select {
@@ -1841,6 +1908,9 @@ body {
 .control-label {
   padding-left: 24px;
   position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .control-mark{
@@ -1964,12 +2034,15 @@ body {
 
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .range-input {
@@ -1980,7 +2053,7 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
-  margin-right: 4px;
+  margin-right: -2px;
   color: var(--color-gray);
 }
 
@@ -1990,7 +2063,11 @@ body {
   margin: 0;
 }
 
-.price-for-ice{margin-right: 4px;}
+.price-for-ice {
+  margin-right: -2px;
+  margin-left: 16px;
+}
+
 
 .content-fillers {
   background-color: var(--background-color-white);
@@ -2079,14 +2156,16 @@ body {
 }
 
 .pagination {
+  margin-top: -12px;
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0;
 }
 
 .space-first {
   width: 168px;
+  margin-right: 320px;
 }
 
 .space-third {
@@ -2096,6 +2175,7 @@ body {
 
 .view {
   color: var(--color-gray);
+  margin-right: 335px;
 }
 
 /* ПЕРЕЛИСТЫВАНИЕ */
