@@ -1845,6 +1845,13 @@ body {
   content: "";
 }
 
+.control-input[type="radio"]:focus + .control-mark-radio{
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2D3440;
+  /* border-radius: 50%; */
+}
+
 .fat-select:hover .control-input[type="radio"]:checked + .control-mark-radio::before {
   position: absolute;
   top: 5px;
