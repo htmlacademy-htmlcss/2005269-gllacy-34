@@ -7,7 +7,6 @@
     <link rel="icon" href="images/favicon.ico">
   </head>
   <body class="body-pink">
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
     <!-- * HEADER -->
 
     <header class="page-header">
@@ -18,11 +17,11 @@
             <li class="navigation-item">
               <a class="navigation-link-logo" href="index.html"><img class="logo" src="images/svg-images/title-logo.svg" alt="Логотип GllacyShop" width="137" height="55"></a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-catalog">
               <a class="navigation-link" href="catalog.html">Каталог</a>
 
               <!-- ! КАТАЛОГ ПОПОВЕР -->
-              <!-- <div class="catalog-popover">
+              <div class="catalog-popover">
                 <h3 class="title-catalog-popover">Новинки</h3>
                 <hr class="horizontal-line">
                 <ul class="catalog-popovet-list">
@@ -31,7 +30,7 @@
                   <li class="catalog-popover-item">Фруктовый лед</li>
                   <li class="catalog-popover-item">Мелорин</li>
                 </ul>
-              </div> -->
+              </div>
 
             </li>
             <li class="navigation-item">
@@ -47,7 +46,7 @@
 
           <a class="number" href="tel:78005558628">+7 800 555-86-28</a>
 
-          <a class="search none-dec" href="#">
+          <a class="search none-dec popover-search-hover" href="#">
             <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-first" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
               d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0
@@ -55,13 +54,12 @@
               fill="#2D3440"/>
             </svg>
             <span class="visually-hidden">Поиск</span>
-          </a>
-
 
           <!-- ! ПОПОВЕР ПОИСКОВИК -->
-          <!-- <div class="popover-search">
+          <div class="popover-search">
             <input class="input-search" type="text" placeholder="Поиск по сайту">
-          </div> -->
+          </div>
+          </a>
 
           <a class="entry none-dec" href="#">
             <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-second" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +74,7 @@
           </a>
 
               <!-- ! ПОПОВЕР ВХОД -->
-              <!-- <div class="popover-entry">
+              <div class="popover-entry">
                 <h3 class="title-popover-entry">Личный кабинет</h3>
                 <input type="text" class="input-popover-entry" placeholder="email@example.com">
                 <input type="password" class="input-popover-entry-password">
@@ -89,8 +87,7 @@
                     <a href="#" class="anchor-popover-entry">Регистрация</a>
                   </div>
                 </div>
-              </div> -->
-
+              </div>
 
           <a class="basket none-dec" href="#">
             <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-third" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,9 +101,9 @@
           </a>
 
           <!-- ! ПОПОВЕР ПУСТОЙ КОРЗИНЫ -->
-          <!-- <div class="popover-empty-basket">
+          <div class="popover-empty-basket">  
             <h3 class="title-empty-basket">Ваша корзина пока пуста</h3>
-          </div> -->
+          </div>
 
         </div>
         </section>
@@ -117,49 +114,6 @@
     <main class="main-index">
     <div class="wrapper">
       <div class="header-choice-icecream">
-
-         <!-- * ПОПАП - КОРЗИНА -->
-        <!-- <div class="pop-up-basket">
-          <h3 class="title-basket">Корзина</h3>
-          <ul class="basket-list">
-            <li class="basket-item">
-              <div class="left-section-basket">
-                <img src="images/raspberry-little.png" alt="Маршмеллоу">
-                <div class="weight-and-name">
-                  <b class="name-basket">Малинка</b>
-                  <p class="weight-basket">1 кг х 310 ₽</p>
-                </div>
-              </div>
-              <div class="right-section-basket">
-                <b class="price-basket">310 ₽</b>
-                <button class="basket-close-button">
-                  <span class="visually-hidden">Закрыть</span>
-                </button>
-              </div>
-            </li>
-            <li class="basket-item">
-              <div class="left-section-basket">
-                <img src="images/bubble-gum-little.png" alt="Клубника">
-                <div class="weight-and-name">
-                  <b class="name-basket">Бабл-гам</b>
-                  <p class="weight-basket">1,5 кг х 320 ₽</p>
-                </div>
-              </div>
-              <div class="right-section-basket">
-                <b class="price-basket">480 ₽</b>
-                <button class="basket-close-button">
-                  <span class="visually-hidden">Закрыть</span>
-                </button>
-              </div>
-            </li>
-          </ul>
-          <div class="footer-basket">
-            <button class="footer-submit-basket additional-button" type="submit">
-              Оформить заказ
-            </button>
-            <b class="footer-price-basket">Итого: 790 ₽</b>
-          </div>
-        </div> -->
 
       <!-- * СЛАЙДЫ -->
       <ul class="header-select-list">
@@ -189,7 +143,7 @@
           </section>
         </li>
 
-        <!-- <li class="header-select-second">
+        <li class="header-select-second slide-no-show">
           <section class="left-select">
           <h1 class="title-ice-cream">Сливочное мороженое<br> со вкусом банана</h1>
           <p class="description-ice-cream">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
@@ -213,7 +167,7 @@
           </section>
         </li>
 
-        <li class="header-select-third">
+        <li class="header-select-third slide-no-show">
           <section class="left-select">
             <h1 class="title-ice-cream">Карамельный пломбир<br> с маршмеллоу</h1>
             <p class="description-ice-cream">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
@@ -235,7 +189,7 @@
 
             <img class="third-little-slide" alt="Мороженое с карамелью и маршмеллоу" width="100" height="150" src="images/banana-little-slide.png">
           </section>
-        </li>-->
+        </li>
       </ul>
 
       <section class="footer-anchors">
@@ -435,7 +389,7 @@
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" fill="#2D3440"/></svg>
                   </button>
                 </span>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название улицы, дома и квартиры</span>
+                <span class="tooltip-text" role="tooltip">Введите название улицы, дома и квартиры</span>
                 </span>
                   <input class="address-input input-base-form" type="text" placeholder="ул. Большая Конюшенная, 19/8" id="address" required>
 
@@ -497,7 +451,7 @@
       </div>
     </footer>
 
-    <!-- ! МОДАЛЬНОЕ ОКНО
+    <!-- ! МОДАЛЬНОЕ ОКНО -->
      <div class="modal-container modal-container-close">
       <div class="modal-feedback">
         <button class="modal-close-button">
@@ -512,8 +466,7 @@
           </form>
           <button class="modal-submit button additional-button" type="submit">Отправить</button>
         </section>
-      </div> -->
+      </div> 
 
-    </div>
   </body>
 </html>

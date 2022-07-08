@@ -17,9 +17,22 @@
           <li class="navigation-item">
             <a class="navigation-link-logo" href="index.html"><img class="logo" src="images/svg-images/title-logo.svg" alt="Логотип GllacyShop" width="137" height="55"></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+          <li class="navigation-item navigation-catalog">
+            <a class="navigation-link navigation-catalog navigation-condition-current" href="catalog.html">Каталог</a>
           </li>
+
+              <!-- ! КАТАЛОГ ПОПОВЕР -->
+              <div class="catalog-popover">
+                <h3 class="title-catalog-popover">Новинки</h3>
+                <hr class="horizontal-line">
+                <ul class="catalog-popovet-list">
+                  <li class="catalog-popover-item">Сливочное</li>
+                  <li class="catalog-popover-item">Щербеты</li>
+                  <li class="catalog-popover-item">Фруктовый лед</li>
+                  <li class="catalog-popover-item">Мелорин</li>
+                </ul>
+              </div>
+
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
@@ -41,6 +54,11 @@
             fill="#2D3440"/>
           </svg>
           <span class="visually-hidden">Поиск</span>
+
+          <!-- ! ПОПОВЕР ПОИСКОВИК -->
+          <div class="popover-search">
+            <input class="input-search" type="text" placeholder="Поиск по сайту">
+          </div>
         </a>
 
         <a class="entry none-dec" href="#">
@@ -54,6 +72,23 @@
           fill="#2D3440"/></svg>
           <span>Вход</span>
         </a>
+
+          <!-- ! ПОПОВЕР ВХОД -->
+          <div class="popover-entry">
+            <h3 class="title-popover-entry">Личный кабинет</h3>
+            <input type="text" class="input-popover-entry" placeholder="email@example.com">
+            <input type="password" class="input-popover-entry-password">
+            <div class="two-sections-entry">
+              <div class="left-section-entry">
+                <button type="button" class="additional-button">Войти</button>
+              </div>
+              <div class="right-section-entry">
+                <a href="#" class="anchor-popover-entry">Забыли пароль?</a>
+                <a href="#" class="anchor-popover-entry">Регистрация</a>
+              </div>
+            </div>
+          </div>
+        
         <a class="basket none-dec" href="#">
           <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-third" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -64,6 +99,12 @@
             0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/></svg>
           <span class="basket-counter">2 товара</span>
         </a>
+
+          <!-- ! ПОПОВЕР ПУСТОЙ КОРЗИНЫ -->
+          <div class="popover-empty-basket">  
+            <h3 class="title-empty-basket">Ваша корзина пока пуста</h3>
+          </div>
+
       </div>
       </section>
     </div>
@@ -71,6 +112,50 @@
 
   <!-- * MAIN -->
   <main class="page-main">
+
+             <!-- * ПОПАП - КОРЗИНА -->
+             <div class="pop-up-basket">
+              <h3 class="title-basket">Корзина</h3>
+              <ul class="basket-list">
+                <li class="basket-item">
+                  <div class="left-section-basket">
+                    <img src="images/raspberry-little.png" alt="Маршмеллоу">
+                    <div class="weight-and-name">
+                      <b class="name-basket">Малинка</b>
+                      <p class="weight-basket">1 кг х 310 ₽</p>
+                    </div>
+                  </div>
+                  <div class="right-section-basket">
+                    <b class="price-basket">310 ₽</b>
+                    <button class="basket-close-button">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="basket-item">
+                  <div class="left-section-basket">
+                    <img src="images/bubble-gum-little.png" alt="Клубника">
+                    <div class="weight-and-name">
+                      <b class="name-basket">Бабл-гам</b>
+                      <p class="weight-basket">1,5 кг х 320 ₽</p>
+                    </div>
+                  </div>
+                  <div class="right-section-basket">
+                    <b class="price-basket">480 ₽</b>
+                    <button class="basket-close-button">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+              <div class="footer-basket">
+                <button class="footer-submit-basket additional-button" type="submit">
+                  Оформить заказ
+                </button>
+                <b class="footer-price-basket">Итого: 790 ₽</b>
+              </div>
+            </div>
+
     <header class="title-catalog">
       <div class="wrapper">
         <ul class="breadcrumbs">
