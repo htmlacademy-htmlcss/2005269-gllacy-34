@@ -1860,7 +1860,11 @@ body {
   border: 1px solid var(--color-white);
 }
 
-.control-input[type="radio"]:checked + .control-input-disabled {
+.control-input:disabled + .control-mark-radio {
+  border: 1px solid rgba(45, 52, 64, 0.4);
+}
+
+.control-input[type="radio"]:checked:disabled + .control-mark-radio::before {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1869,10 +1873,6 @@ body {
   background-color: rgba(45, 52, 64, 0.4);
   border-radius: 50%;
   content: "";
-}
-
-.control-input-disabled{
-  border: 1px solid rgba(45, 52, 64, 0.4);
 }
 
 .select-choice {
@@ -1924,11 +1924,11 @@ body {
   content: url(../images/svg-images/checkbox-hover-checked.svg);
 }
 
-.control-input:disabled .control-mark{
+.control-input:disabled + .control-mark{
   content: url(../images/svg-images/checkbox-disabled.svg);
 }
 
-.control-input:disabled .control-input[type="checkbox"]:checked + .control-mark {
+.control-input[type="checkbox"]:checked:disabled + .control-mark {
   content: url(../images/svg-images/checkbox-disabled-checked.svg);
 }
 
