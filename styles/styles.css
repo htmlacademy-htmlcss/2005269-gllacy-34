@@ -311,6 +311,11 @@ body {
   margin: auto 0;
 }
 
+.basket-div {
+  position: relative;
+  padding-bottom: 24px;
+}
+
 .basket {
   font-size: 14px;
   line-height: 20px;
@@ -321,6 +326,11 @@ body {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 27px;
   margin-left: 16px;
+  top: 12px;
+}
+
+.basket-div:hover .pop-up-basket{
+  display: block;
 }
 
 
@@ -393,6 +403,12 @@ body {
   margin-top: 8px;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
+}
+
+.catalog-div {
+  top: 12px;
+  position: relative;
+  padding-bottom: 24px;
 }
 
 .navigation-catalog:hover .catalog-popover{
@@ -598,8 +614,8 @@ body {
   padding: 48px;
   z-index: 3;
   position: absolute;
-  left: -12px;
-  top: 78px;
+  left: -312px;
+  top: 48px;
 }
 
 .basket:hover + div.pop-up-basket {
