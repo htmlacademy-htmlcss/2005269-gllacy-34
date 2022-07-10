@@ -443,6 +443,7 @@ body {
   display: block;
   border-radius: 4px;
   display: none;
+  filter: drop-shadow(0px 15px 40px rgba(45, 52, 64, 0.12));
 }
 
 
@@ -464,6 +465,13 @@ body {
   margin: 0 0 16px 0;
   width: 324px;
   box-sizing: border-box;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.input-popover-entry:hover {
+  border: 1px solid #2D3440;
+  border-radius: 4px;
 }
 
 .input-popover-entry::placeholder {
@@ -479,6 +487,14 @@ body {
   margin-bottom: 16px;
   width: 324px;
   box-sizing: border-box;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+
+.input-popover-entry-password:hover {
+  border: 1px solid #2D3440;
+  border-radius: 4px;
 }
 
 .input-popover-entry-password::placeholder {
