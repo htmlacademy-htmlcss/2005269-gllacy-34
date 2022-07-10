@@ -20,19 +20,20 @@
           </li>
           <li class="navigation-item navigation-catalog">
             <a class="navigation-link navigation-catalog navigation-condition-current" href="catalog.html">Каталог</a>
+                          <!-- ! КАТАЛОГ ПОПОВЕР -->
+                          <div class="catalog-popover">
+                            <h3 class="title-catalog-popover">Новинки</h3>
+                            <hr class="horizontal-line">
+                            <ul class="catalog-popovet-list">
+                              <li class="catalog-popover-item">Сливочное</li>
+                              <li class="catalog-popover-item">Щербеты</li>
+                              <li class="catalog-popover-item">Фруктовый лед</li>
+                              <li class="catalog-popover-item">Мелорин</li>
+                            </ul>
+                          </div>
           </li>
 
-              <!-- ! КАТАЛОГ ПОПОВЕР -->
-              <div class="catalog-popover">
-                <h3 class="title-catalog-popover">Новинки</h3>
-                <hr class="horizontal-line">
-                <ul class="catalog-popovet-list">
-                  <li class="catalog-popover-item">Сливочное</li>
-                  <li class="catalog-popover-item">Щербеты</li>
-                  <li class="catalog-popover-item">Фруктовый лед</li>
-                  <li class="catalog-popover-item">Мелорин</li>
-                </ul>
-              </div>
+
 
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -56,11 +57,12 @@
           </svg>
           <span class="visually-hidden">Поиск</span>
 
-          <!-- ! ПОПОВЕР ПОИСКОВИК -->
-          <div class="popover-search">
-            <input class="input-search" type="text" placeholder="Поиск по сайту">
-          </div>
+
         </a>
+                  <!-- ! ПОПОВЕР ПОИСКОВИК -->
+                  <div class="popover-search">
+                    <input class="input-search" type="text" placeholder="Поиск по сайту">
+                  </div>
 
         <a class="entry none-dec" href="#">
           <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-second" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +116,12 @@
   <!-- * MAIN -->
   <main class="page-main">
 
-             <!-- * ПОПАП - КОРЗИНА -->
+              <!-- ! ПОПОВЕР ПУСТОЙ КОРЗИНЫ -->
+              <div class="popover-empty-basket">  
+                <h3 class="title-empty-basket">Ваша корзина пока пуста</h3>
+              </div>
+    
+             <!-- ! ПОПАП - КОРЗИНА -->
              <div class="pop-up-basket">
               <h3 class="title-basket">Корзина</h3>
               <ul class="basket-list">
@@ -176,7 +183,6 @@
     <section class="choice-catalog">
       <form class="choice-catalog-form" action="https://echo.htmlacademy.ru">
         <div class="header-choice-catalog">
-
           <div class="select">
             <div class="select-choice">
               <span class="select-text">Сортировка:</span>
@@ -186,9 +192,9 @@
                   <option>сначала дешевле</option>
                   <option>сначала дороже</option>
               </select>
+              </div>
             </div>
           </div>
-
           <div class="range">
             <div class="range-wrapper-inputs">
               <label class="catalog-filter-label">
@@ -199,7 +205,6 @@
                 <input class="range-input" type="number" value="500" name="max-price"> ₽
               </label>
             </div>
-
             <section class="backround-white-range">
             <div class="range-scale">
               <div class="range-bar" style="left: 32px; width: 72px;">
@@ -244,7 +249,6 @@
                 <span class="control-mark-radio"></span><span class="control-label">выше 30%</span></label>
             </section>
           </div>
-
         </div>
 
         <div class="footer-choice-catalog">
@@ -279,8 +283,8 @@
               </section>
               <button class="submit-filter button" type="submit">Применить</button>
             </section>
+          </div>
 
-        </div>
       </form>
     </section>
     </div>
@@ -451,12 +455,18 @@
 
   <div class="wrapper">
     <ul class="pagination">
-      <div class="space-first"></div>
+      <li>
+        <div class="space-first"></div>
+      </li>
 
-      <div class="space-second">
-        <li><a class="view none-dec main-button" href="#">Показать еще</a></li>
-      </div>
+      <li>
+        <div class="space-second">
+          <a class="view none-dec main-button" href="#">Показать еще</a>
+        </div>
+      </li>
 
+
+      
       <div class="space-third">
         <li class="pagination-item-arrow">
           <a class="pagination-link pagination-prev pagination-disabled">
