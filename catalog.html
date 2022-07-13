@@ -27,7 +27,7 @@
                 <h3 class="title-catalog-popover">Новинки</h3>
                 <hr class="horizontal-line">
                 <ul class="catalog-popovet-list">
-                  <li class="catalog-popover-item">Сливочное</li>
+                  <li class="catalog-popover-item catalog-popover-current">Сливочное</li>
                   <li class="catalog-popover-item">Щербеты</li>
                   <li class="catalog-popover-item">Фруктовый лед</li>
                   <li class="catalog-popover-item">Мелорин</li>
@@ -51,13 +51,13 @@
 
         <div class="search-div">
         <a class="search none-dec" href="#">
-          <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-first" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="navigation-icon navigation-icon-first" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
             d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0
             0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
             fill="#2D3440"/>
           </svg>
-          <span class="visually-hidden">Поиск</span>
+          <span class="visually-hidden">Поиск.</span>
         </a>
           <!-- ! ПОПОВЕР ПОИСКОВИК -->
           <div class="popover-search">
@@ -68,7 +68,7 @@
         <div class="entry-div">
         
         <a class="entry none-dec" href="#">
-          <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-second" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="navigation-icon navigation-icon-second" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
           d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2
           2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0
@@ -82,15 +82,15 @@
           <!-- ! ПОПОВЕР ВХОД -->
           <div class="popover-entry">
             <h3 class="title-popover-entry">Личный кабинет</h3>
-            <input type="text" class="input-popover-entry" placeholder="email@example.com">
-            <input type="password" class="input-popover-entry-password">
+            <input  class="input-popover-entry" type="text" placeholder="email@example.com">
+            <input class="input-popover-entry-password" type="password">
             <div class="two-sections-entry">
               <div class="left-section-entry">
                 <button type="button" class="additional-button">Войти</button>
               </div>
               <div class="right-section-entry">
-                <a href="#" class="anchor-popover-entry">Забыли пароль?</a>
-                <a href="#" class="anchor-popover-entry">Регистрация</a>
+                <a class="anchor-popover-entry" href="#">Забыли пароль?</a>
+                <a class="anchor-popover-entry" href="#">Регистрация</a>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@
 
         <div class="basket-div">
           <a class="basket none-dec" href="#">
-            <svg aria-hidden="true" focusable="false" class="navigation-icon navigation-icon-third" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="navigation-icon navigation-icon-third" aria-hidden="true" focusable="false"  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
               d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0
               1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14
@@ -124,7 +124,7 @@
                 <div class="right-section-basket">
                   <b class="price-basket">310 ₽</b>
                   <button class="basket-close-button">
-                    <span class="visually-hidden">Закрыть</span>
+                    <span class="visually-hidden">Убрать из корзины.</span>
                   </button>
                 </div>
               </li>
@@ -139,7 +139,7 @@
                 <div class="right-section-basket">
                   <b class="price-basket">480 ₽</b>
                   <button class="basket-close-button">
-                    <span class="visually-hidden">Закрыть</span>
+                    <span class="visually-hidden">Убрать из корзины.</span>
                   </button>
                 </div>
               </li>
@@ -187,7 +187,7 @@
             <div class="select-choice">
               <span class="select-text">Сортировка:</span>
               <div class="select-option">
-              <select class="select-control" id="select">
+              <select class="select-control"  id="select">
                   <option>по популярности</option>
                   <option>сначала дешевле</option>
                   <option>сначала дороже</option>
@@ -293,7 +293,7 @@
     <section class="types-ice-cream">
       <ul class="types-ice-cream-list">
         <li class="types-ice-cream-item">
-          <img alt="Мороженое со вкусом клубники." src="images/raspberry.png" width="192" height="184">
+          <img src="images/raspberry.png" alt="Мороженое со вкусом клубники." width="192" height="184">
           <div class="footer-icecream">
             <b class="name-ice-cream">Малинка</b>
             <p class="name-information">Сливочное мороженое с малиновым джемом</p>
@@ -301,12 +301,12 @@
               <span class="price">310 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
         <li class="types-ice-cream-item">
-          <img alt="Мороженое со вкусом фисташки." src="images/pistachio.png" width="192" height="184">
+          <img src="images/pistachio.png" alt="Мороженое со вкусом фисташки." width="192" height="184">
           <div class="footer-icecream">
             <b class="name-ice-cream">Фисташка</b>
             <p class="name-information">Фисташковый пломбир с кусочками шоколада</p>
@@ -314,12 +314,12 @@
               <span class="price">340 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
         <li class="types-ice-cream-item">
-          <img alt="Мороженое со вкусом черники." src="images/blueberry.png" width="192" height="184">
+          <img src="images/blueberry.png" alt="Мороженое со вкусом черники." width="192" height="184">
           <div class="footer-icecream">
             <b class="name-ice-cream">Черника</b>
             <p class="name-information">Крем-брюле<br> с черничным джемом</p>
@@ -327,12 +327,12 @@
               <span class="price">330 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
         <li class="types-ice-cream-item">
-          <img alt="Мороженое со вкусом бабл-гам." src="images/bubble-gum.png" width="192" height="184">
+          <img src="images/bubble-gum.png" alt="Мороженое со вкусом бабл-гам." width="192" height="184">
           <div class="footer-icecream">
             <b class="name-ice-cream">Бабл-гам</b>
             <p class="name-information">Ванильный пломбир<br> со сладкой посыпкой</p>
@@ -340,7 +340,7 @@
               <span class="price">320 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -353,7 +353,7 @@
                 <span class="price">330 ₽/кг</span>
                 <a class="button svg-buy">
                   <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                  <span class="visually-hidden">Купить</span></a>
+                  <span class="visually-hidden">Купить.</span></a>
               </div>
           </div>
         </li>
@@ -366,7 +366,7 @@
               <span class="price">340 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -379,7 +379,7 @@
               <span class="price">270 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -392,7 +392,7 @@
               <span class="price">330 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -405,7 +405,7 @@
               <span class="price">310 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -418,7 +418,7 @@
               <span class="price">320 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -431,7 +431,7 @@
               <span class="price">360 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -444,7 +444,7 @@
               <span class="price">280 ₽/кг</span>
               <a class="button svg-buy">
                 <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect class="rect-buy-svg" width="32" height="32" rx="16"/><path class="path-buy-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/></svg>
-                <span class="visually-hidden">Купить</span></a>
+                <span class="visually-hidden">Купить.</span></a>
             </div>
           </div>
         </li>
@@ -467,7 +467,7 @@
       <div class="space-third">
         <li class="pagination-item-arrow">
           <a class="pagination-link pagination-prev pagination-disabled">
-            <span class="visually-hidden">Предыдущая страница</span>
+            <span class="visually-hidden">Предыдущая страница.</span>
           </a>
         </li>
         <li class="pagination-item">
@@ -487,7 +487,7 @@
         </li>
         <li class="pagination-item-arrow">
           <a class="pagination-link pagination-next none-dec" href="#">
-            <span class="visually-hidden">Следующая страница</span>
+            <span class="visually-hidden">Следующая страница.</span>
           </a>
         </li>
       </div>
