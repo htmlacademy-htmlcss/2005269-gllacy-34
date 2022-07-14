@@ -1162,14 +1162,6 @@ body {
   fill: var(--color-white);
 }
 
-.svg-buy:active .path-buy-svg {
-  fill: var(--color-gray);
-}
-
-.svg-buy:active .rect-buy-svg{
-  fill: var(--color-pink);
-}
-
 .svg-buy:focus .path-buy-svg {
   fill: var(--color-white);
 }
@@ -1177,6 +1169,14 @@ body {
 .svg-buy:focus .rect-buy-svg {
   fill: var(--color-pink-button);
   outline: var(--color-gray);
+}
+
+.svg-buy:active .path-buy-svg {
+  fill: var(--color-gray);
+}
+
+.svg-buy:active .rect-buy-svg{
+  fill: var(--color-pink);
 }
 
 .svg-buy {
@@ -1193,16 +1193,16 @@ body {
   height: 32px;
 }
 
-.svg-buy-disabled{
+.svg-buy-disabled {
   outline: 2px solid #B9B9B9;
   border-radius: 26px;
 }
 
-.svg-buy-disabled rect{
+.svg-buy-disabled rect {
   fill: #B9B9B9;
 }
 
-.svg-buy-disabled path{
+.svg-buy-disabled path {
   fill: #565C66;
 }
 
@@ -1221,7 +1221,7 @@ body {
   border-radius: 8px;
 }
 
-.types-ice-cream-item img{
+.types-ice-cream-item img {
   border-radius: 100%;
   display: block;
   margin: -51px auto 0 auto;
@@ -1957,10 +1957,20 @@ body {
   content: "";
 }
 
-
-/* .fat-select:focus .control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]:focus + .control-mark-radio {
   border: 1px solid var(--color-white);
-} */
+} 
+
+.control-input[type="radio"]:focus:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  content: "";
+}
 
 .select-choice {
   display: inline-block;
@@ -1993,17 +2003,17 @@ body {
   line-height: 20px;
 }
 
-.control-mark{
+.control-mark {
   position: absolute;
   top: 3px;
   content: url(../images/svg-images/checkbox-default.svg);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark{
+.control-input[type="checkbox"]:checked + .control-mark {
   content: url(../images/svg-images/checkbox-default-checked.svg);
 }
 
-.control:hover .control-mark{
+.control:hover .control-mark {
   content: url(../images/svg-images/checbox-hover.svg);
 }
 
@@ -2011,7 +2021,15 @@ body {
   content: url(../images/svg-images/checkbox-hover-checked.svg);
 }
 
-.control-input:disabled + .control-mark{
+.control-input[type="checkbox"]:focus + .control-mark {
+  content: url(../images/svg-images/checbox-hover.svg);
+}
+
+.control-input[type="checkbox"]:focus:checked + .control-mark {
+  content: url(../images/svg-images/checkbox-hover-checked.svg);
+}
+
+.control-input:disabled + .control-mark {
   content: url(../images/svg-images/checkbox-disabled.svg);
 }
 
@@ -2437,16 +2455,16 @@ body {
 
 .button {
   cursor: pointer;
-
 }
 
-.svg-button {
-  outline: none;
-  border: none;
-  width: 32px;
-  height: 32px;
+.button-svg {
+  padding: 0;
+  border: none; 
 }
 
+.button-next {
+  padding: 0;
+}
 
 .none-dec {
   text-decoration: none;
