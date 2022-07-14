@@ -61,9 +61,13 @@
               <!-- ! ПОПОВЕР ПОИСКОВИК -->
               <div class="popover-search">
                 <form action="https://echo.htmlacademy.ru/" method="get">
-                  <label for="search">
+                  <label for="search" class="visually-hidden">Поиск по сайту.</label>
                     <input class="input-search" type="text" id="search" name="search" placeholder="Поиск по сайту">
-                  </label>
+                    <button class="input-reset-button" type="reset">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" fill="#2D3440"/>
+                      </svg>
+                    </button>
                 </form>
               </div>
           </div>
@@ -86,20 +90,21 @@
               <div class="popover-entry">
                 <h3 class="title-popover-entry">Личный кабинет</h3>
                 <form action="https://echo.htmlacademy.ru/" method="post" >
-                  <label for="email">
+                  <label class="visually-hidden" for="email">Вход в личный кабинет.</label>
                     <input class="input-popover-entry" id="email" name="email" type="text" placeholder="email@example.com">
                     <input class="input-popover-entry-password" id="password" name="password" type="password" placeholder="••••••">
-                  </label>
-                <div class="two-sections-entry">
+                  
+              <div class="two-sections-entry">
                   <div class="left-section-entry">
                     <button class="additional-button" type="submit">Войти</button>
                   </div>
-                </form>
+                
                   <div class="right-section-entry">
                     <a class="anchor-popover-entry" href="#">Забыли пароль?</a>
                     <a class="anchor-popover-entry" href="#">Регистрация</a>
                   </div>
                 </div>
+              </form>
               </div>
             
           </div>
@@ -181,13 +186,13 @@
           </div>
           <div class="right-select">
             <div class="title-slider">
-              <button class="anchor-back button-next" href="#" type="button">
+              <button class="anchor-back button-next" type="button">
                 <span class="visually-hidden">Предыдующая картинка.</span>
               </button>
               <span class="background-slide"></span>
               <img class="first-title-slide" alt="Мороженое с клубничным джемом." height="507" width="306" src="images/title-first-slide.png">
 
-              <button class="anchor-next button-next" href="#" type="button">
+              <button class="anchor-next button-next" type="button">
                 <span class="visually-hidden">Следующая картинка.</span>
               </button>
           </div>
@@ -400,9 +405,8 @@
             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <div class="footer-mailing">
               <form class="form-email-input" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="email-feedback">
+                <label class="visually-hidden" for="email-feedback">Рассылка e-mail.</label>
                 <input class="email-input" id="email-feedback" type="email" name="mailing-list" placeholder="email@example.com" required>
-                </label>
                 <button class="mailing-submit additional-button" type="submit">Отправить</button>
               </form>
             </div>
@@ -515,11 +519,11 @@
         <div class="modal-content">
           <h3 class="modal-title">Мы обязательно ответим вам!</h3>
           <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru/">
-            <label for="name-and-surname">
+            <label for="name-and-surname">Обратная связь.</label>
               <input class="modal-input" id="name-and-surname" name="name-and-surname" type="text" placeholder="Имя и Фамилия" required>
               <input class="modal-input" name="email" type="email" placeholder="email@example.com" required>
               <textarea class="modal-input modal-input-freedom" name="feedback" placeholder="В свободной форме" required></textarea>
-            </label>
+            
             <button class="modal-submit button additional-button" type="submit">Отправить</button>
           </form>
           

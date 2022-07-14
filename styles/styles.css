@@ -592,6 +592,22 @@ body {
   padding: 0;
 }
 
+.input-reset-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  padding: 13px;
+  line-height: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.input-search:not(:placeholder-shown) + .input-reset-button {
+  display: block;
+}
+
 /* ПОПАП КОРЗИНА*/
 .title-basket {
   margin: 0 0 32px 0;

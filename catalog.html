@@ -62,9 +62,14 @@
           <!-- ! ПОПОВЕР ПОИСКОВИК -->
           <div class="popover-search">
             <form action="https://echo.htmlacademy.ru/" method="get">
-              <label for="search">
+              <label class="visually-hidden" for="search">Поиск по сайту.</label>
                 <input class="input-search" type="text" id="search" name="search" placeholder="Поиск по сайту">
-              </label>
+                <button class="input-reset-button" type="reset">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" fill="#2D3440"/>
+                  </svg>
+                </button>
+              
             </form>
           </div>
       </div>
@@ -87,20 +92,21 @@
           <div class="popover-entry">
             <h3 class="title-popover-entry">Личный кабинет</h3>
             <form action="https://echo.htmlacademy.ru/" method="post" >
-              <label for="email">
+              <label class="visually-hidden" for="email">Вход в личный кабинет.</label>
                 <input class="input-popover-entry" id="email" name="email" type="text" placeholder="email@example.com">
                 <input class="input-popover-entry-password" id="password" name="password" type="password" placeholder="••••••">
-              </label>
+              
             <div class="two-sections-entry">
               <div class="left-section-entry">
                 <button class="additional-button" type="submit">Войти</button>
               </div>
-            </form>
+            
               <div class="right-section-entry">
                 <a class="anchor-popover-entry" href="#">Забыли пароль?</a>
                 <a class="anchor-popover-entry" href="#">Регистрация</a>
               </div>
             </div>
+          </form>
           </div>
         
         </div>
