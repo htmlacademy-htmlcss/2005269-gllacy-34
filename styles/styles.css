@@ -217,15 +217,16 @@ body {
   outline: 0px solid var(--color-white);
 }
 
-
-
-
 /* CURRENT ДЛЯ ССЫЛОК В HEADER"E */
 
 .navigation-condition-current {
   background: var(--color-pink-button);
   color: var(--color-white);
   border-radius: 30px;
+}
+
+.navigation-condition-current svg path{
+  fill: #FCFCFC;
 }
 
 .search {
@@ -1063,7 +1064,6 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-
 }
 
 .present-list {
@@ -1095,7 +1095,6 @@ body {
 
 .present-first, .present-second {
   width: 570px;
-  /* height: 268px; */
   background-color: var(--color-present-pink);
   border-radius: 16px;
   padding: 36px 0 36px 36px;
@@ -1127,7 +1126,6 @@ body {
   margin-top: 28px;
   display: block;
   width: 112px;
-
 }
 
 .take-present:hover {
@@ -1575,7 +1573,6 @@ body {
 
 .background-mailing {
   background-color: var(--color-white);
-  /* height: 212px; */
   margin: 6px;
   border-radius: 16px;
   padding-top:  26px;
@@ -1942,21 +1939,6 @@ body {
   border: 1px solid var(--color-white);
 }
 
-.control-input:disabled + .control-mark-radio {
-  border: 1px solid rgba(45, 52, 64, 0.4);
-}
-
-.control-input[type="radio"]:checked:disabled + .control-mark-radio::before {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 6px;
-  height: 6px;
-  background-color: rgba(45, 52, 64, 0.4);
-  border-radius: 50%;
-  content: "";
-}
-
 .control-input[type="radio"]:focus + .control-mark-radio {
   border: 1px solid var(--color-white);
 } 
@@ -1968,6 +1950,21 @@ body {
   width: 6px;
   height: 6px;
   background-color: var(--color-white);
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input:disabled + .control-mark-radio {
+  border: 1px solid rgba(45, 52, 64, 0.4);
+}
+
+.control-input[type="radio"]:checked:disabled + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(45, 52, 64, 0.4);
   border-radius: 50%;
   content: "";
 }
@@ -2172,8 +2169,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   background-color: var(--background-color-white);
-  /* width: 185px; */
-  /* height: 36px; */
   color: var(--color-gray);
   outline: 2px solid var(--color-white);
   border-radius: 20px;
@@ -2189,8 +2184,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   background-color: var(--color-white);
-  /* width: 185px; */
-  /* height: 36px; */
   color: var(--color-gray);
   outline: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 20px;
@@ -2205,8 +2198,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   background-color: var(--background-color-white);
-  /* width: 185px; */
-  /* height: 36px; */
   color: var(--color-gray);
   outline: 2px solid var(--color-gray);
   border-radius: 20px;
@@ -2221,8 +2212,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   background-color: var(--background-color-white);
-  /* width: 185px; */
-  /* height: 36px; */
   color: var(--color-gray);
   outline: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 20px;
@@ -2254,6 +2243,11 @@ body {
   padding: 0;
 }
 
+.pagination-current {
+  background: #FCFCFC;
+  border-radius: 50px;
+}
+
 .space-first {
   width: 168px;
   margin-right: 320px;
@@ -2270,7 +2264,6 @@ body {
 
 .view {
   color: var(--color-gray);
-  /* margin-right: 335px; */
 }
 
 /* ПЕРЕЛИСТЫВАНИЕ */
@@ -2621,5 +2614,3 @@ body {
 .text-disabled:hover {
   border: 1px solid #B9B9B9;
 }
-
-/* CURRENT */

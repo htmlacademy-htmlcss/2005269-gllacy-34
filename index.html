@@ -400,7 +400,9 @@
             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <div class="footer-mailing">
               <form class="form-email-input" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="email-input" type="email" name="mailing-list" placeholder="email@example.com" required>
+                <label for="email-feedback">
+                <input class="email-input" id="email-feedback" type="email" name="mailing-list" placeholder="email@example.com" required>
+                </label>
                 <button class="mailing-submit additional-button" type="submit">Отправить</button>
               </form>
             </div>
@@ -513,9 +515,11 @@
         <div class="modal-content">
           <h3 class="modal-title">Мы обязательно ответим вам!</h3>
           <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru/">
-            <input class="modal-input" name="name-and-surname" type="text" placeholder="Имя и Фамилия" required>
-            <input class="modal-input" name="email" type="email" placeholder="email@example.com" required>
-            <textarea class="modal-input modal-input-freedom" name="feedback" placeholder="В свободной форме" required></textarea>
+            <label for="name-and-surname">
+              <input class="modal-input" id="name-and-surname" name="name-and-surname" type="text" placeholder="Имя и Фамилия" required>
+              <input class="modal-input" name="email" type="email" placeholder="email@example.com" required>
+              <textarea class="modal-input modal-input-freedom" name="feedback" placeholder="В свободной форме" required></textarea>
+            </label>
             <button class="modal-submit button additional-button" type="submit">Отправить</button>
           </form>
           
