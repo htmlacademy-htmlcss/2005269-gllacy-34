@@ -12,7 +12,7 @@
   <!-- * HEADER -->
   <header class="page-header">
     <div class="wrapper">
-      <section class="page-head">
+      <div class="page-head">
       <nav class="page-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -83,7 +83,7 @@
           <div class="popover-entry">
             <h3 class="title-popover-entry">Личный кабинет</h3>
             <input  class="input-popover-entry" type="text" placeholder="email@example.com">
-            <input class="input-popover-entry-password" type="password">
+            <input class="input-popover-entry-password" type="password" placeholder="••••••">
             <div class="two-sections-entry">
               <div class="left-section-entry">
                 <button type="button" class="additional-button">Войти</button>
@@ -151,8 +151,9 @@
               <b class="footer-price-basket">Итого: 790 ₽</b>
             </div>
           </div>
+        </div>
       </div>
-      </section>
+    </div>
     </div>
   </header>
 
@@ -180,7 +181,7 @@
 
     <!-- * ВЫБОР ЧТО ИМЕННО ОТОБРАЖАТЬ -->
     <div class="wrapper">
-    <section class="choice-catalog">
+    <div class="choice-catalog">
       <form class="choice-catalog-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="header-choice-catalog">
           <div class="select">
@@ -205,23 +206,23 @@
                 <input class="range-input" type="number" value="500" name="max-price"> ₽
               </label>
             </div>
-            <section class="backround-white-range">
-            <div class="range-scale">
-              <div class="range-bar" style="left: 32px; width: 72px;">
-                <button class="range-toggle toggle-min">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
+            <div class="backround-white-range">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 32px; width: 72px;">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
             </div>
-            </section>
           </div>
 
           <div class="fat">
             <span class="select-text">Жирность:</span>
-            <section class="backround-white-choice fat-choice">
+            <div class="backround-white-choice fat-choice">
               <label class="fat-select">
                 <input class="visually-hidden control-input" type="radio" name="fat-radio" value="0 %" >
                 <span class="control-mark-radio"></span>
@@ -246,14 +247,14 @@
                 <input class="visually-hidden control-input" type="radio" name="fat-radio" value="выше 30
                 %">
                 <span class="control-mark-radio"></span><span class="control-label">выше 30%</span></label>
-            </section>
+              </div>
           </div>
         </div>
 
         <div class="footer-choice-catalog">
           <span class="select-text">Наполнители:</span>
-            <section class="choice-and-button">
-              <section class="backround-white-choice checkbox-choice">
+            <div class="choice-and-button">
+              <div class="backround-white-choice checkbox-choice">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="chocolate" value="chocolate" checked>
                   <span class="control-mark"></span>
@@ -279,18 +280,18 @@
                   <span class="control-mark"></span>
                   <span class="control-label">джемы</span>
                 </label>
-              </section>
+              </div>
               <button class="submit-filter button" type="submit">Применить</button>
-            </section>
+            </div>
           </div>
 
       </form>
-    </section>
+    </div>
     </div>
 
     <!-- * ВЫБОР МОРОЖЕНОГО -->
     <div class="wrapper">
-    <section class="types-ice-cream">
+    <div class="types-ice-cream">
       <ul class="types-ice-cream-list">
         <li class="types-ice-cream-item">
           <img src="images/raspberry.png" alt="Мороженое со вкусом клубники." width="192" height="184">
@@ -449,22 +450,19 @@
           </div>
         </li>
       </ul>
-    </section>
+    </div>
   </div>
 
   <div class="wrapper">
-    <ul class="pagination">
-      <li>
+    <div class="pagination">
+      
         <div class="space-first"></div>
-      </li>
-
-      <li>
+      
         <div class="space-second">
           <a class="view none-dec main-button" href="#">Показать еще</a>
         </div>
-      </li>
-
-      <div class="space-third">
+      
+      <ul class="space-third">
         <li class="pagination-item-arrow">
           <a class="pagination-link pagination-prev pagination-disabled">
             <span class="visually-hidden">Предыдущая страница.</span>
@@ -490,15 +488,15 @@
             <span class="visually-hidden">Следующая страница.</span>
           </a>
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
   </div>
 
   </main>
   <!-- * FOOTER -->
   <footer class="page-footer">
     <div class="wrapper">
-      <section class="anchors-footer">
+      <div class="anchors-footer">
         <ul class="social-network-footer">
           <li>
             <a class="social-icon-tg" href="https://t.me/htmlacademy">
@@ -527,7 +525,7 @@
           <a class="html-academy-main" href="https://htmlacademy.ru/"><img src="images/svg-images/logo_htmlacademy.svg" class="html-academy-image" width="93" height="27" alt="логотип html academy."></a>
           <span class="html-made">Сделано в <a href="https://htmlacademy.ru/" class="footer-htmlacademy">.html academy</a> © 2021</span>
         </div>
-      </section>
+      </div>
     </div>
   </footer>
 </body>

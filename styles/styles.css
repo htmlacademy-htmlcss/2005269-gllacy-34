@@ -1642,7 +1642,7 @@ body {
   display:flex;
   align-items: center;
   margin-top: 80px;
-  margin-bottom: -95px;
+  margin-bottom: -76px;
 }
 
 .address-info {
@@ -1753,7 +1753,7 @@ body {
 }
 
 .anchors-footer {
-  margin-top: 95px;
+  margin-top: 77px;
   display: flex;
   padding-bottom: 48px;
   justify-content: space-between;
@@ -2242,13 +2242,17 @@ body {
 }
 
 .space-third {
+  list-style-type: none;
   width: 168px;
   display: flex;
+  padding: 0;
+  margin-left: auto;
+  margin-top: 0;
 }
 
 .view {
   color: var(--color-gray);
-  margin-right: 335px;
+  /* margin-right: 335px; */
 }
 
 /* ПЕРЕЛИСТЫВАНИЕ */

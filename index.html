@@ -11,7 +11,7 @@
 
     <header class="page-header">
       <div class="wrapper">
-        <section class="page-head">
+        <div class="page-head">
         <nav class="page-navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -60,33 +60,39 @@
             </a>
               <!-- ! ПОПОВЕР ПОИСКОВИК -->
               <div class="popover-search">
+                <form method="get">
                 <input class="input-search" type="text" placeholder="Поиск по сайту">
+                </form>
               </div>
           </div>
 
           <div class="entry-div">
-        
-            <a class="entry none-dec" href="#">
-              <svg class="navigation-icon navigation-icon-second" aria-hidden="true" focusable="false"  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2
-              2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0
-              0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33
-              3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67
-              0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
-              fill="#2D3440"/></svg>
-              <span>Вход</span>
-            </a>
-    
+            
+            <label for="email">
+              <a class="entry none-dec" href="#">
+                <svg class="navigation-icon navigation-icon-second" aria-hidden="true" focusable="false"  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2
+                2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0
+                0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33
+                3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67
+                0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                fill="#2D3440"/></svg>
+                <span>Вход</span>
+              </a>
+            </label>
+
               <!-- ! ПОПОВЕР ВХОД -->
               <div class="popover-entry">
                 <h3 class="title-popover-entry">Личный кабинет</h3>
-                <input class="input-popover-entry" type="text" placeholder="email@example.com">
-                <input class="input-popover-entry-password" type="password">
+                <form method="post">
+                  <input class="input-popover-entry" id="email" type="text" placeholder="email@example.com">
+                  <input class="input-popover-entry-password" id="password" type="password" placeholder="••••••">
                 <div class="two-sections-entry">
                   <div class="left-section-entry">
-                    <button class="additional-button" type="button">Войти</button>
+                    <button class="additional-button" type="submit">Войти</button>
                   </div>
+                </form>
                   <div class="right-section-entry">
                     <a class="anchor-popover-entry" href="#">Забыли пароль?</a>
                     <a class="anchor-popover-entry" href="#">Регистрация</a>
@@ -94,7 +100,7 @@
                 </div>
               </div>
             
-            </div>
+          </div>
 
         <div class="basket-div">
           <a class="basket none-dec" href="#">
@@ -154,7 +160,7 @@
         </div>
 
         </div>
-        </section>
+      </div>
       </div>
     </header>
 
@@ -166,12 +172,12 @@
       <!-- * СЛАЙДЫ -->
       <ul class="header-select-list">
         <li class="header-select-first">
-          <section class="left-select">
-          <h1 class="title-ice-cream">Нежный пломбир<br> с клубничным джемом</h1>
+          <div class="left-select">
+          <h2 class="title-ice-cream">Нежный пломбир<br> с клубничным джемом</h2>
           <p class="description-ice-cream">Натуральное мороженое из свежих сливок<br> и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
             <a class="order main-button">Заказать</a>
-          </section>
-          <section class="right-select">
+          </div>
+          <div class="right-select">
             <div class="title-slider">
               <a class="anchor-back" href="#">
                 <span class="visually-hidden">Предыдующая картинка.</span>
@@ -188,17 +194,17 @@
 
             <span class="background-slide-third"></span>
             <img class="third-little-slide" alt="Мороженое с карамелью и маршмеллоу." width="100" height="150" src="images/caramel-little-slide.png">
-          </section>
+        </div>
         </li>
 
         <li class="header-select-second slide-no-show">
-          <section class="left-select">
-          <h1 class="title-ice-cream">Сливочное мороженое<br> со вкусом банана</h1>
+          <div class="left-select">
+          <h2 class="title-ice-cream">Сливочное мороженое<br> со вкусом банана</h2>
           <p class="description-ice-cream">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
             даже в самый жаркий летний день.  </p>
           <a class="order">Заказать</a>
-          </section>
-          <section class="right-select">
+          </div>
+          <div class="right-select">
             <a class="anchor-back" href="#">
               <span class="visually-hidden">Предыдующая картинка.</span>
             </a>
@@ -212,17 +218,17 @@
             <img class="second-little-slide" alt="Карамельный пломбир с маршмеллоу." width="100" height="150" src="images/caramel-little-slide.png">
 
             <img class="third-little-slide" alt="Мороженое с клубничным джемом." width="100" height="150" src="images/strawberry-little-slide.png">
-          </section>
+          </div>
         </li>
 
         <li class="header-select-third slide-no-show">
-          <section class="left-select">
-            <h1 class="title-ice-cream">Карамельный пломбир<br> с маршмеллоу</h1>
+          <div class="left-select">
+            <h2 class="title-ice-cream">Карамельный пломбир<br> с маршмеллоу</h2>
             <p class="description-ice-cream">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
               сердца сладкоежек всех возрастов. </p>
             <a class="order">Заказать</a>
-          </section>
-          <section class="right-select">
+            </div>
+          <div class="right-select">
             <a class="anchor-back" href="#">
               <span class="visually-hidden">Предыдующая картинка.</span>
             </a>
@@ -236,11 +242,11 @@
             <img class="second-little-slide" alt="Мороженое со вкусом банана." width="100" height="150" src="images/strawberry-little-slide.png">
 
             <img class="third-little-slide" alt="Мороженое с карамелью и маршмеллоу." width="100" height="150" src="images/banana-little-slide.png">
-          </section>
+          </div>
         </li>
       </ul>
 
-      <section class="footer-anchors">
+      <div class="footer-anchors">
         <ul class="select-anchors">
           <li class="select-acnhors-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -273,7 +279,7 @@
               <svg class="svg-youtube" aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14 11.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L14 12.2c.25-.12.25-.3 0-.42ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z" fill="#FCFCFC"/></svg>
               <span class="visually-hidden youtube">Соцсеть YouTube.</span></a></li>
         </ul>
-      </section>
+      </div>
     </div>
 
       <!-- * ПОДАРКИ -->
@@ -282,27 +288,28 @@
       <section class="present">
         <ul class="present-list">
           <li class="present-item">
-            <section class="present-first">
+            <div class="present-first">
               <h3 class="present-berry">Малинка даром!</h3>
               <p class="info-present">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="take-present main-button">Хочу подарок</a>
-            </section>
+            </div>
           </li>
           <li class="present-item">
-            <section class="present-second">
+            <div class="present-second">
               <h3 class="present-marschmellow">Маршмеллоу даром!</h3>
               <p class="info-present">При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
               <a class="take-present main-button">Хочу подарок</a>
-            </section>
+            </div>
           </li>
         </ul>
       </section>
     </div>
+
     <h2 class="information-choice">Попробуйте самые популярные вкусы нашего мороженого</h2>
     <div class="wrapper">
 
       <!-- * ВЫБОР ИЗ 4 МОРОЖЕНЫХ -->
-      <section class="types-ice-cream">
+      <div class="types-ice-cream">
         <ul class="types-ice-cream-list">
           <li class="types-ice-cream-item">
             <img alt="Мороженое со вкусом клубники." src="images/raspberry.png" width="192" height="184">
@@ -357,11 +364,11 @@
             </div>
           </li>
         </ul>
-      </section>
+      </div>
     </div>
 
       <!-- * ОПИСАНИЕ МАГАЗИНА И ЕГО ПРЕИМУЩЕСТВА -->
-      <section class="advantages">
+      <div class="advantages">
         <div class="background-white">
           <h2 class="information-advantages">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <ul class="advantages-list">
@@ -374,38 +381,38 @@
               который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
           </ul>
         </div>
-      </section>
+      </div>
 
       <!-- * 10 СПОСОБОВ СЕРВИРОВКИ -->
-      <section class="ways-and-mailing">
-        <section class="ways-10">
+      <div class="ways-and-mailing">
+        <div class="ways-10">
           <p class="new-blog">Новое в нашем блоге</p>
           <h3 class="serving">10 способов сервировки фруктовых щербетов
             <br>к столу</h3>
-        </section>
+          </div>
 
         <!-- * РАССЫЛКА E-MAIL -->
-        <section class="mailing">
+        <div class="mailing">
           <div class="background-mailing">
             <p class="info-mailing">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>
             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <div class="footer-mailing">
               <form class="form-email-input" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="email-input" type="text" placeholder="email@example.com">
-              <button class="mailing-submit additional-button" type="submit">Отправить</button>
+                <input class="email-input" type="text" placeholder="email@example.com" required>
+                <button class="mailing-submit additional-button" type="submit">Отправить</button>
               </form>
             </div>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
 
       <!-- * ДОСТАВКА МОРОЖЕНОГО -->
       <div class="delivery">
-        <section class="delivery-info">
+        <div class="delivery-info">
           <h2 class="information">Доставка любимого мороженого на дом</h2>
           <p class="info-present-delivery">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        </section>
-        <section class="section-form">
+        </div>
+        <div class="section-form">
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="delivery-form-info">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
 
@@ -442,27 +449,27 @@
 
             <button class="delivery-submit button additional-button" type="submit">Отправить</button>
           </form>
-        </section>
+        </div>
       </div>
 
       <!-- * АДРЕС МАГАЗИНА И ОБРАТНАЯ СВЯЗЬ -->
-      <section class="map-address">
-        <section class="address-info">
+      <div class="map-address">
+        <div class="address-info">
           <p class="addres-title">Адрес главного офиса и офлайн-магазина:</p>
           <h4 class="city">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</h4>
           <p class="orders-telephone">Для заказов по телефону:</p>
           <h4 class="city"><a class="number-address" href="tel:78005558628">+7 (812) 812-12-12</a></h4>
           <p class="time-address">(с 10 до 20 ежедневно)</p>
           <a class="feedback none-dec additional-button" href="#">Форма обратной связи</a>
-        </section>
-      </section>
+        </div>
+      </div>
     </div>
     </main>
 
     <!-- * FOOTER -->
     <footer class="page-footer">
       <div class="wrapper">
-        <section class="anchors-footer">
+        <div class="anchors-footer">
           <ul class="social-network-footer">
             <li>
               <a class="social-icon-tg" href="https://t.me/htmlacademy">
@@ -491,7 +498,7 @@
             <a class="html-academy-main" href="https://htmlacademy.ru/"><img src="images/svg-images/logo_htmlacademy.svg" class="html-academy-image" width="93" height="27" alt="логотип html academy."></a>
             <span class="html-made">Сделано в <a class="footer-htmlacademy" href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
           </div>
-        </section>
+        </div>
       </div>
     </footer>
 
@@ -501,15 +508,15 @@
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+        <div class="modal-content">
+          <h3 class="modal-title">Мы обязательно ответим вам!</h3>
           <form class="modal-feedback-form" method="post">
             <input class="modal-input" type="text" placeholder="Имя и Фамилия" required>
             <input class="modal-input" type="email" placeholder="email@example.com" required>
             <textarea class="modal-input modal-input-freedom" placeholder="В свободной форме" required></textarea>
           </form>
           <button class="modal-submit button additional-button" type="submit">Отправить</button>
-        </section>
+        </div>
       </div> 
      </div> 
 
